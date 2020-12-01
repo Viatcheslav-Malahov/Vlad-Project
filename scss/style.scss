@@ -111,13 +111,11 @@ nav {
             border-bottom: 2px solid rgba(2, 169, 123, 1);            
         }
     }
+    .fas {
+        color: rgba(45, 66, 117, 1);
+    }
 }
 
-main {
-    background: url('../images/lines_main.svg') no-repeat;
-    background-size: cover;
-    padding-bottom: 200rem;
-}
 
 header {
     padding-bottom: 144rem;
@@ -131,7 +129,7 @@ header {
         width: 50%;
         @media screen and (max-width: 960px) {
            width: 100%;
-           padding:5% 16%;
+           padding:5% 7%;
            text-align: center;
           }
         h1 {
@@ -218,7 +216,11 @@ header {
 
 }
 
-
+main {
+    background: url('../images/lines_main.svg') no-repeat;
+    background-size: cover;
+    padding-bottom: 200rem;
+}
 
 
 .section__credo {
@@ -343,7 +345,7 @@ header {
 .section__picLeft {
     flex-direction: row-reverse;
     .content__right {
-        margin-left: 20rem;
+        margin-right: 64rem;
         display: flex;
         justify-content: center;
         @media screen and (max-width:960px){
@@ -356,9 +358,9 @@ header {
     }
 }
 
-.section__picRigt {
+.section__picRight {
     .content__right {
-        margin-right: 20rem;
+        margin-left: 64rem;
         display: flex;
         justify-content: center;
         @media screen and (max-width:960px){
@@ -369,6 +371,9 @@ header {
 
 footer {
     padding: 131rem 0 0 0;
+    @media screen and (max-width:960px){
+        padding: 30rem 0 0 0 ;
+    }
     background-color: #2D4275;
     clip-path: polygon(40rem 0%, calc(100% - 40rem) 0%, 100% 40rem, 100% 100%, 70% 100%, 30% 100%, 0% 100%, 0 40rem);    
     font-family: Bender;
@@ -384,12 +389,19 @@ footer {
         display: flex;
         justify-content: space-between;
         @media screen and (max-width:960px){
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             justify-content: center;
             text-align: center;
             padding: 0;
             margin: 10rem 0;
+            .footer__item1{
+                display: none;
+            }
+            .footer__item3 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
         }
 
     }
@@ -409,6 +421,7 @@ footer {
         font-family: Bender;
         font-size: 18rem;
         h2 {
+            text-transform: uppercase;
             font-family: Bender;
             font-style: normal;
             font-weight: bold;
@@ -428,7 +441,7 @@ footer {
     }
     .footer__item3 {
         h2 {
-            margin-bottom: 23rem;
+            margin: 23rem 0 40rem 0 ; 
         }
         .li__socials{
             margin-bottom: 0;
@@ -437,24 +450,30 @@ footer {
             display: flex;
             @media screen and (max-width:960px){
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 text-align: center;
-                margin: 10rem 0;
-                padding: 0;
             }
     
             li{
                 margin-right: 16rem;
                 margin-bottom: 0;
                 @media screen and (max-width:960px){
-                    margin: 10rem 0;
                     padding: 0;
                 }
     
             }
             margin-bottom: 0;
 
+        }
+        @media screen and (max-width:960px){
+            .li__grid {
+                display: flex;
+                justify-content: center;
+                margin: 25rem 0 0 0;
+                li {
+                    margin: 0 25rem;
+                }
+            }
         }
         li {
             margin-bottom: 16rem;
@@ -463,6 +482,9 @@ footer {
     .footer__borderline {
         margin: 0 auto;
         margin-top: 95rem;
+        @media screen and (max-width:960px){
+            margin-top: 40rem;
+        }
         width: 80%;
         height: 0.5px;
         border: 0.25px solid  rgba(255, 255, 255, 0.14);;
@@ -472,5 +494,8 @@ footer {
         display: block;
         padding: 20rem 0;
         text-align: center;
+        @media screen and (max-width:960px){
+            margin: 0;
+        }
     }
 }
