@@ -41,6 +41,8 @@ nav {
     height: 85px;
     align-items: center;
     position: relative;
+    color: rgba(45, 66, 117, 1);
+
     .nav__bar{
         display: none;
     }
@@ -137,12 +139,33 @@ main {
             label{
                 display: flex;
                 align-items: center;
+            }           
+            
+        }
+
+        .form__item_btn { 
+            margin-top: 30rem;
+            display: flex;
+            justify-content: center;
+            button {
+                outline: none;
+                height: 40rem;
+                width: 200rem;
+                font-family: Bender;
+                font-weight: 400;
+                font-size: 18rem;
+                border: none;
+                border-radius: 20rem;
+                background-color: #82D8D8 ;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #82d8d8e0,  ;
             }
         }
         input{    
             font-family: Bender;
             font-weight: 400;
-            font-size: 18rem;
             height: 40rem;
             width: 200rem;
             padding-left: 20rem;            
@@ -152,13 +175,11 @@ main {
             width: 200rem;
             font-family: Bender;
             font-weight: 400;
-            font-size: 18rem;
             padding-left: 20rem;            
 
             option {
                 font-family: Bender;
                 font-weight: 400;
-                font-size: 18rem;            
             }
         }
     }

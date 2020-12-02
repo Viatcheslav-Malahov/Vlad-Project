@@ -44,6 +44,7 @@ nav {
   height: 85px;
   align-items: center;
   position: relative;
+  color: #2d4275;
 }
 nav .nav__bar {
   display: none;
@@ -140,10 +141,29 @@ main form .form__item label {
   display: flex;
   align-items: center;
 }
-main form input {
+main form .form__item_btn {
+  margin-top: 30rem;
+  display: flex;
+  justify-content: center;
+}
+main form .form__item_btn button {
+  outline: none;
+  height: 40rem;
+  width: 200rem;
   font-family: Bender;
   font-weight: 400;
   font-size: 18rem;
+  border: none;
+  border-radius: 20rem;
+  background-color: #82D8D8;
+  cursor: pointer;
+}
+main form .form__item_btn button:hover {
+  background-color: #82d8d8e0;
+}
+main form input {
+  font-family: Bender;
+  font-weight: 400;
   height: 40rem;
   width: 200rem;
   padding-left: 20rem;
@@ -153,13 +173,11 @@ main form select {
   width: 200rem;
   font-family: Bender;
   font-weight: 400;
-  font-size: 18rem;
   padding-left: 20rem;
 }
 main form select option {
   font-family: Bender;
   font-weight: 400;
-  font-size: 18rem;
 }
 
 footer {
