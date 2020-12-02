@@ -455,10 +455,10 @@ footer .footer__item2 li {
   margin-bottom: 16rem;
 }
 footer .footer__item3 h2 {
-  margin: 23rem 0 40rem 0;
+  margin: 0 0 23rem 0;
 }
 footer .footer__item3 .li__socials {
-  margin-bottom: 0;
+  margin-bottom: 5rem;
 }
 footer .footer__item3 .footer__socials {
   display: flex;
