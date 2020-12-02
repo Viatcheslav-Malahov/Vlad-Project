@@ -11,7 +11,7 @@ html {
   font-size: 1px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+sh1, h2, h3, h4, h5, h6 {
   font-size: 1em;
 }
 
@@ -136,6 +136,18 @@ main form .form__item {
   display: flex;
   justify-content: space-between;
   margin-top: 30rem;
+}
+@media screen and (max-width: 960px) {
+  main form .form__item {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main form .form__item input {
+    align-self: center;
+  }
 }
 main form .form__item label {
   display: flex;
