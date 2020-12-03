@@ -32,6 +32,10 @@
     </nav> 
    
     <header>    
+
+        
+        <form id='form__email' action="/vlad_form_parser" method="POST">
+        </form>
         <div class="header__right"> 
 
             <h1>MORE OXYGEN, LESS CARBON</h1>   
@@ -46,9 +50,9 @@
                 recycle CO2.
             </h3>
             <div class="header__inp">
-                <input class="email__inp" type="text" placeholder="Email address">
+                <input  form = 'form__email'class="email__inp" type="text" placeholder="Email address">
 
-                <button class="form__link">
+                <button form = 'form__email' class="form__link" type="submit">
                     START TODAY
                 </button>
             </div>
