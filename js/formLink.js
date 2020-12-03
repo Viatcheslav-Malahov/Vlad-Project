@@ -8,8 +8,9 @@ document.querySelector('.form__link').addEventListener('click',(event)=>{
         let xhr = new XMLHttpRequest();
         let oData = new FormData()
         oData.append('UserEmail' , emailInp.value)
-        xhr.open('POST','http://127.0.0.1:5500/index.html',false)
+        xhr.open('POST','http://95.213.249.252/vlad_form_parser',false)
         xhr.send(oData)
+        xhr.response
         //window.location.href = './form.html'
     }
 })
