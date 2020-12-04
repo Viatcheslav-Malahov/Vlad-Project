@@ -6,12 +6,6 @@ document.querySelector('.form__link').addEventListener('click',(event)=>{
         return false
     }
      else {
-
         document.getElementById('form__email').submit()
-    //     let xhr = new XMLHttpRequest();
-    //     let oData = new FormData()
-    //     oData.append('UserEmail' , emailInp.value)
-    //     xhr.open('POST','http://95.213.249.252/vlad_form_parser',false)
-    //     xhr.send(oData)
     }
 })

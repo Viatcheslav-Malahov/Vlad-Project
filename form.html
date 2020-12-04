@@ -33,16 +33,16 @@
     <main>
         <form action="/vlad_form_parser" method="POST">
 
-            <input class='hidden' type="text" value =`{main}`>
+            <input id = 'email__inp' class='hidden' type="text" value =`{main}`>
 
             <div class="form__item">
                 <label for="UserName">Name</label>
-                <input type="text" id="UserName" name="UserName">
+                <input class='form_elem' type="text" id="UserName" name="UserName">
             </div>
    
             <div class="form__item">
                 <label for="UserRole">Role</label>
-                <select name="UserRole" id="UserRole">
+                <select class='form_elem' name="UserRole" id="UserRole">
                     <option value="Farmer">Farmer</option>
                     <option value="Processor">Processor</option>
                     <option value="Producer">Producer</option>
@@ -59,7 +59,7 @@
 
             <div class="form__item">
                 <label for="UserCountry">Country</label>
-                <select name="UserCountry" id="UserCountry">
+                <select class='form_elem' name="UserCountry" id="UserCountry">
                     <option value="AX">AALAND ISLANDS</option>
                     <option value="AF">AFGHANISTAN</option>
                     <option value="AL">ALBANIA</option>
@@ -289,7 +289,7 @@
             
             <div class="form__item">
                 <label for="UserReason">I am becoming an O2+ member because </label>
-                <select name="UserReason" id="UserReason">
+                <select class='form_elem' name="UserReason" id="UserReason">
                     <option>I would like to know about offsetting CO2</option>
                     <option>I want to connect with other stakeholders</option>
                     <option>I am interested in learning more about carbon negative goods</option>
@@ -300,19 +300,22 @@
             
             <div class="form__item">
                 <label for="Agreement">I agree</label>
-                <input type="checkbox" id="Agreement" name="Agreement">
+                <input class='form_elem' type="checkbox" id="Agreement" name="Agreement" >
             </div>
 
             <div class="form__item">
                 <label for="UserName">Keep me notified about ….</label>
-                <input type="text" id="UserEmail" name="UserEmail">
+                <input class='form_elem' type="text" id="UserEmail" name="UserEmail">
             </div>
 
             <div class="form__item_btn">
                 <button>BECOME A MEMBER</button>
             </div>
 
-            
+            <p class="RedAllert hidden">
+                Fill in all the fields
+               <i class = 'fas fa-times'></i>
+            </p>
 
         </form>
     </main>
@@ -375,5 +378,6 @@
     </footer>
     
     <script src="./js/navbar.js"></script>
+    <script src="./js/formSend.js"></script>
 </body>
 </html>

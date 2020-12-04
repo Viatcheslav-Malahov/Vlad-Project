@@ -332,3 +332,19 @@ footer .footer__down {
     margin: 0;
   }
 }
+
+.redBorder {
+  border: 2px solid red;
+}
+
+form p {
+  position: absolute;
+  top: 0;
+  margin-top: 110px;
+  border: 2px solid red;
+  padding: 5px;
+}
+form p i {
+  cursor: pointer;
+  margin-left: 10px;
+}
