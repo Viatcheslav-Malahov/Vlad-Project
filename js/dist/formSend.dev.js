@@ -2,17 +2,29 @@
 
 var formInfo = {};
 var inputValues = document.querySelectorAll('.form_elem');
+var Agreemnet = document.querySelector('#Agreement');
 document.querySelector('.form__item_btn').addEventListener('click', function (event) {
   event.preventDefault();
   formInfo['Email'] = document.querySelector('#email__inp').value;
   inputValues.forEach(function (element) {
-    if (element.value == '') {
-      element.classList.add('redBorder');
-      document.querySelector('.RedAllert').classList.remove('hidden');
-      return false;
+    if (element == Agreemnet) {
+      if (element.checked == false) {
+        document.querySelector('#Agreement').classList.add('RedOutline');
+        document.querySelector('.RedAllert').classList.remove('hidden');
+        return false;
+      } else {
+        formInfo[element.name] = element.checked;
+        document.querySelector('#Agreement').classList.remove('RedOutline');
+      }
     } else {
-      formInfo[element.name] = element.value;
-      element.classList.remove('redBorder');
+      if (element.value == '') {
+        element.classList.add('redBorder');
+        document.querySelector('.RedAllert').classList.remove('hidden');
+        return false;
+      } else {
+        formInfo[element.name] = element.value;
+        element.classList.remove('redBorder');
+      }
     }
   });
 
@@ -23,7 +35,7 @@ document.querySelector('.form__item_btn').addEventListener('click', function (ev
   var y = 0;
 
   for (var x = 0; x < inputValues.length; x++) {
-    if (isNotEmpty(inputValues[x]) == false) {
+    if (isNotEmpty(inputValues[x]) == false || Agreemnet.checked == false) {
       y++;
     }
   }

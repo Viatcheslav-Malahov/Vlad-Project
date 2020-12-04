@@ -7,11 +7,12 @@
     list-style: none;
 }
 html {
-    font-size: 1px;
+    font-size: 0.8px;
 }
 h1,h2,h3,h4,h5,h6 {
     font-size: 1em;
 }
+
 @media screen and (max-width: 1400px) {
     html {
         font-size: 0.8px;
@@ -34,6 +35,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: Bender-black;
     src: url('../fonts/Jovanny\ Lemonad\ -\ Bender-Black.otf');
 }
+
 nav {
     padding: 0 16%;
     display: flex;
@@ -96,7 +98,7 @@ nav {
           margin: 0 25rem ;
           font-family: Bender;
           font-weight: 700;
-          font-size: 16rem;
+          font-size: 20rem;
           line-height: 24rem;
           font-style: normal;
           cursor: pointer;
@@ -120,7 +122,10 @@ nav {
 header {
     padding-bottom: 144rem;
     background-color: #F0F8FA;
-    clip-path: polygon(5% 0%, 95% 0%, 100% 0, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0 0);    display: flex;
+    height: calc(100vh - 85px);
+    //clip-path: polygon(40rem 0%, calc(100% - 40rem) 0%, 100% 40rem, 100% 100%, 70% 100%, 30% 100%, 0% 100%, 0 40rem);    
+
+    clip-path: polygon(80rem 0%, calc(100% - 80rem) 0%, 100% 0, 100% calc(100% - 80rem), calc(100% - 80rem) 100%, 80rem 100%, 0% calc(100% - 80rem), 0 0);    display: flex;
     @media screen and (max-width: 960px) {
       display: block;
     }
@@ -160,6 +165,9 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 280px) {
+            padding-top: 10px;
+        }
         input {
             width: 392rem;
             height: 64rem;
@@ -195,6 +203,10 @@ header {
             a:visited{
                 color: black;
             }
+            @media screen and (max-width: 280px) {
+                margin-bottom: 30rem;
+            }
+
         }
         button:hover {
             opacity: 0.8;
@@ -221,26 +233,29 @@ header {
 
 }
 
-main {
-    background: url('../images/lines_main.svg') no-repeat;
-    background-size: cover;
-    padding-bottom: 200rem;
-}
+// main {
+//     background: url('../images/lines_main.svg') no-repeat;
+//     background-size: cover;
+//     padding-bottom: 200rem;
+//     @media screen and (max-width:960px){
+//         //background: url('../images/lines_main.svg') ;
+//     }
+//}
 
 
 .section__credo {
-    width: 53%;
+    padding: 0 5%;
     margin: 0 auto;
     color: black;
     font-size: 44rem;
     line-height: 64rem;
     font-family: Bender-bold;
-    margin-top: 176rem;
-    margin-bottom: 152rem;
+    margin: 100rem 0;
     text-align: center;
     @media screen and (max-width:960px){
         display: block;
         text-align: center;
+        margin: 100rem 0 0 0 ;
     }
 
 }
@@ -253,20 +268,21 @@ main {
 
     display: flex;
     
+    
     @media screen and (max-width: 960px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 200rem 0 ;
+        padding: 20rem 0;
         img {
             display: none;
         }
     } 
     
     @media screen and (max-width: 560px){
-        padding: 100rem 0;
+        padding: 20rem 0;
     }
 
     h2{
@@ -310,13 +326,14 @@ main {
             display: none;
         }
         @media screen and (max-width: 960px) {
+            width: 90%;
             margin-top: 30rem;
             display: flex;
             justify-content: center;
             align-items: center;
             img {
                 display: block;
-                width: 100%;
+                width: 90%;
             }
         } 
 
@@ -329,6 +346,7 @@ main {
         justify-content: center;
 
         @media screen and (max-width: 960px) {
+            width: 80%;
            margin-top: 30rem;
            display: flex;
            justify-content: center;
@@ -360,6 +378,8 @@ main {
     @media screen and (max-width: 960px) {
 
         flex-direction: column-reverse;
+        background-color: #F0F8FA;
+
     }
 }
 
@@ -393,6 +413,9 @@ footer {
         padding: 0 296rem ;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width:1200px){
+            padding: 0 150rem;
+        }
         @media screen and (max-width:960px){
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -443,7 +466,31 @@ footer {
         li {
             margin-bottom: 16rem;
         }
+
     }
+    .footer__item2_1 {
+        @media screen and (max-width:960px){
+            padding-left: 350rem;
+        }    
+        @media screen and (max-width:768px){
+            padding-left: 200rem;
+        } 
+        @media screen and (max-width:568px){
+            padding-left: 0;
+        }     
+    }
+    .footer__item2_2 {
+        @media screen and (max-width:960px){
+            padding-right: 350rem;
+        }    
+        @media screen and (max-width:768px){
+            padding-right: 100rem;
+        }  
+        @media screen and (max-width:568px){
+            padding-right: 0;
+        }   
+    }
+
     .footer__item3 {
         h2 {
             margin: 0 0 23rem 0 ; 
@@ -451,19 +498,42 @@ footer {
         .li__socials{
             margin-bottom: 5rem;
         }
+        @media screen and (max-width:960px){
+            margin-top: 20rem;
+        }
         .footer__socials{
             display: flex;
             @media screen and (max-width:960px){
                 display: flex;
                 justify-content: center;
                 text-align: center;
+                img {
+                    height: 100%;
+                }
             }
-    
+            @media screen and (max-width:1200px){
+                img {
+                    height: 19.2px;
+                }
+            } 
+            @media screen and (max-width:960px){
+                img {
+                    height: 100%;
+                }
+            }
+            
+            @media screen and (max-width:360px){
+                img {
+                    height: 20px;
+                }
+            } 
+   
             li{
                 margin-right: 16rem;
                 margin-bottom: 0;
                 @media screen and (max-width:960px){
                     padding: 0;
+                    
                 }
     
             }

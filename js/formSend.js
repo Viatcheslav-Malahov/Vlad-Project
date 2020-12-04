@@ -1,19 +1,34 @@
 let formInfo = {}
 let inputValues = document.querySelectorAll('.form_elem')
+let Agreemnet = document.querySelector('#Agreement')
 document.querySelector('.form__item_btn').addEventListener('click' ,(event)=>{
     event.preventDefault()
     
     formInfo['Email'] = document.querySelector('#email__inp').value
     inputValues.forEach(element => {
-        if (element.value == '' ){
-            element.classList.add('redBorder')
-            document.querySelector('.RedAllert').classList.remove('hidden')
-            return false
+        if (element == Agreemnet){
+            if(element.checked == false){
+                document.querySelector('#Agreement').classList.add('RedOutline')
+                document.querySelector('.RedAllert').classList.remove('hidden')
+                return false
+            }
+            else{
+                formInfo[element.name] = element.checked
+                document.querySelector('#Agreement').classList.remove('RedOutline')
+            }
         }
-        else{
-            formInfo[element.name] = element.value
-            element.classList.remove('redBorder')
+        else {
+            if (element.value == ''){
+                element.classList.add('redBorder')
+                document.querySelector('.RedAllert').classList.remove('hidden')
+                return false
+            }
             
+            else{
+                formInfo[element.name] = element.value
+                element.classList.remove('redBorder')
+                
+            }
         }
     });
     function isNotEmpty(a){
@@ -21,7 +36,7 @@ document.querySelector('.form__item_btn').addEventListener('click' ,(event)=>{
     }
     let y = 0 
     for (let x =0 ; x < inputValues.length ; x++){
-        if( isNotEmpty(inputValues[x]) == false){
+        if( isNotEmpty(inputValues[x]) == false || Agreemnet.checked == false){
             y++
         }
     }
