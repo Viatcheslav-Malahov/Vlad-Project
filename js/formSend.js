@@ -46,7 +46,7 @@ document.querySelector('.form__item_btn').addEventListener('click' ,(event)=>{
         oData.append('form' , JSON.stringify(formInfo))
         xhr.open('POST','http://127.0.0.1:5500/',false)
         xhr.send(oData)
-        window.location.href = '../test.html'
+        xhr.onload = function
     }
 
 })
