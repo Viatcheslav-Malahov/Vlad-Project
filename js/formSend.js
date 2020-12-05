@@ -13,7 +13,6 @@ document.querySelector('.form__item_btn').addEventListener('click' ,(event)=>{
                 return false
             }
             else{
-                formInfo[element.name] = element.checked
                 document.querySelector('#Agreement').classList.remove('RedOutline')
             }
         }
@@ -46,7 +45,7 @@ document.querySelector('.form__item_btn').addEventListener('click' ,(event)=>{
         oData.append('form' , JSON.stringify(formInfo))
         xhr.open('POST','http://127.0.0.1:5500/',false)
         xhr.send(oData)
-        xhr.onload = function
+        //xhr.onload = function
     }
 
 })

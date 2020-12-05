@@ -13,7 +13,6 @@ document.querySelector('.form__item_btn').addEventListener('click', function (ev
         document.querySelector('.RedAllert').classList.remove('hidden');
         return false;
       } else {
-        formInfo[element.name] = element.checked;
         document.querySelector('#Agreement').classList.remove('RedOutline');
       }
     } else {
@@ -45,8 +44,7 @@ document.querySelector('.form__item_btn').addEventListener('click', function (ev
     var oData = new FormData();
     oData.append('form', JSON.stringify(formInfo));
     xhr.open('POST', 'http://127.0.0.1:5500/', false);
-    xhr.send(oData);
-    window.location.href = '../test.html';
+    xhr.send(oData); //xhr.onload = function
   }
 });
 document.querySelector('.RedAllert').querySelector('i').addEventListener('click', function () {
