@@ -152,18 +152,23 @@ header {
     @media screen and (max-width: 1200px){
         padding-top: 65px;
     }
+   
     @media screen and (max-width: 960px) {
         padding-top: 0;
         padding-bottom: 0rem;
-        display: block;
+        display: flex;
+        flex-direction: column;
         .Header__Mobile_Pic{
-            display: flex;
-            justify-content: center;
-            align-items: center;
             flex-grow: 1;
-            img{
-              flex-grow: 1;
-              height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;         
+            @media screen and (max-width: 300px) {
+                display: none;
+            }
+            @media screen and (max-height: 800px){
+                display: none;
             }
       }
     }
@@ -178,7 +183,18 @@ header {
             padding: 30rem 7%;
             text-align: center;
         }
-    
+        @media screen and (max-width: 300px) {
+            flex-grow: 1;
+        }
+        @media screen and (max-height: 800px){
+            padding: 0 5% ;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+        }
+
         h1 {
             margin-top: 124rem;
             font-family: Bender-bold;
@@ -313,7 +329,7 @@ header {
             width: 100%;
         }
     }
-
+   
 }
 
 main {
