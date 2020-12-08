@@ -358,8 +358,15 @@ main {
 }
 @media screen and (max-width: 960px) {
   main {
-    background: url("../images/lines_main.svg");
-    background-size: contain;
+    background: none;
+  }
+  main .section__picRight {
+    background: url("../images/Background__left.svg") no-repeat;
+    background-size: cover;
+  }
+  main .section__picLeft {
+    background: url("../images/Background__right.svg") no-repeat;
+    background-size: cover;
   }
 }
 

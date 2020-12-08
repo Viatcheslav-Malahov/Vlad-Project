@@ -337,8 +337,19 @@ main {
     background-size: cover;
     padding-bottom: 200rem;
     @media screen and (max-width:960px){
-        background: url('../images/lines_main.svg')  ;
-        background-size: contain;
+        //background: url('../images/lines_main.svg')  ;
+        //background-size: contain;
+        background:none;
+        .section__picRight{
+            background: url('../images/Background__left.svg') no-repeat;
+            background-size: cover ;
+
+        }
+        .section__picLeft{
+            background: url('../images/Background__right.svg') no-repeat;
+            background-size: cover ;
+        }
+
     }
 }
 
