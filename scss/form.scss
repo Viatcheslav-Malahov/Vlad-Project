@@ -207,6 +207,7 @@ main {
 }
 
 
+
 footer {
     padding: 131rem 0 0 0;
     @media screen and (max-width:960px){
@@ -226,6 +227,9 @@ footer {
         padding: 0 296rem ;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width:1200px){
+            padding: 0 150rem;
+        }
         @media screen and (max-width:960px){
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -276,7 +280,31 @@ footer {
         li {
             margin-bottom: 16rem;
         }
+
     }
+    .footer__item2_1 {
+        @media screen and (max-width:960px){
+            padding-left: 350rem;
+        }    
+        @media screen and (max-width:768px){
+            padding-left: 200rem;
+        } 
+        @media screen and (max-width:568px){
+            padding-left: 0;
+        }     
+    }
+    .footer__item2_2 {
+        @media screen and (max-width:960px){
+            padding-right: 350rem;
+        }    
+        @media screen and (max-width:768px){
+            padding-right: 100rem;
+        }  
+        @media screen and (max-width:568px){
+            padding-right: 0;
+        }   
+    }
+
     .footer__item3 {
         h2 {
             margin: 0 0 23rem 0 ; 
@@ -284,19 +312,42 @@ footer {
         .li__socials{
             margin-bottom: 5rem;
         }
+        @media screen and (max-width:960px){
+            margin-top: 20rem;
+        }
         .footer__socials{
             display: flex;
             @media screen and (max-width:960px){
                 display: flex;
                 justify-content: center;
                 text-align: center;
+                img {
+                    height: 100%;
+                }
             }
-    
+            @media screen and (max-width:1200px){
+                img {
+                    height: 19.2px;
+                }
+            } 
+            @media screen and (max-width:960px){
+                img {
+                    height: 100%;
+                }
+            }
+            
+            @media screen and (max-width:360px){
+                img {
+                    height: 20px;
+                }
+            } 
+   
             li{
                 margin-right: 16rem;
                 margin-bottom: 0;
                 @media screen and (max-width:960px){
                     padding: 0;
+                    
                 }
     
             }
@@ -341,6 +392,7 @@ footer {
 .redBorder {
     border: 2px solid red;
 }
+
 form {
     p {
         position: absolute;

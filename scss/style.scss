@@ -48,6 +48,13 @@ nav {
     @media screen and (max-width: 960px) {
         //clip-path: polygon(80rem 0%, calc(100% - 80rem) 0%, 100% 80rem, 100% calc(100% - 80rem), 100% 100%, 0 100%, 0% calc(100% - 80rem), 0% 80rem);
         height: 65px;
+        padding: 0 8%;
+        .nav__logo {
+            height: 28px;
+            img{
+                height: 100%;
+            }
+        }
     }
     //clip-path: polygon(80rem 0%, calc(100% - 80rem) 0%, 100% 0, 100% calc(100% - 80rem), calc(100% - 80rem) 100%, 80rem 100%, 0% calc(100% - 80rem), 0 0);    display: flex;   
     a:visited {
@@ -148,7 +155,8 @@ header {
     .Header__Mobile_Pic{
         display: none;
     }
-    clip-path: polygon(80rem 0%, calc(100% - 80rem) 0%, 100% 0, 100% calc(100% - 80rem), calc(100% - 80rem) 100%, 80rem 100%, 0% calc(100% - 80rem), 0 0);    display: flex;
+    clip-path: polygon(10vh 0%, calc(100% - 10vh) 0%, 100% 0, 100% calc(100% - 10vh), calc(100% - 10vh) 100%, 10vh 100%, 0% calc(100% - 10vh), 0 0); 
+    display: flex;
     @media screen and (max-width: 1200px){
         padding-top: 65px;
     }
@@ -180,7 +188,7 @@ header {
         }
         @media screen and (max-width: 960px) {
             width: 100%;
-            padding: 30rem 7%;
+            padding: 60rem 7% 0 7%;
             text-align: center;
         }
         @media screen and (max-width: 300px) {
@@ -194,6 +202,10 @@ header {
             height: 100%;
             align-items: center;
         }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         h1 {
             margin-top: 124rem;
@@ -319,6 +331,9 @@ header {
     }
     .header__left {
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         @media screen and (max-width: 960px) {
             margin: 0 auto;
@@ -355,18 +370,20 @@ main {
 
 
 .section__credo {
-    padding: 0 5%;
+    padding: 0 16%;
     margin: 0 auto;
     color: black;
-    font-size: 44rem;
+    font-size: 56rem;
     line-height: 64rem;
     font-family: Bender-bold;
-    margin: 100rem 0;
+    margin: 300rem 0;
     text-align: center;
     @media screen and (max-width:960px){
         display: block;
         text-align: center;
-        margin: 100rem 0 0 0 ;
+        padding: 10%;
+        font-size: 44rem;
+        margin: 70rem 0 0 0  ;
     }
 
 }
