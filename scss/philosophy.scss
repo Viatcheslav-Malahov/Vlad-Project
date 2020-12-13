@@ -450,6 +450,11 @@ main{
             .team__wrapper_top {
                 display: flex;
                 margin-top: 88rem;
+                @media screen and (max-width: 400px){
+                    display: grid;
+                    grid-template-columns: 1fr;
+
+                }
             }
 
             .team__wrapper_bottom {
@@ -463,6 +468,11 @@ main{
                     .team__item {
                         margin-top: 50rem;
                     }
+                }
+                @media screen and (max-width: 400px){
+                    display: grid;
+                    grid-template-columns: 1fr;
+
                 }
             }
         }
@@ -502,7 +512,13 @@ main{
 
             @media screen and (max-width: 860px){
                 grid-template-columns: 1fr 1fr ;
+                padding: 0 296rem;
   
+            }
+            @media screen and (max-width: 400px){
+               display: flex;
+               flex-direction: column;
+               padding: 0;
             }
             .advisory__item{
 
@@ -513,8 +529,9 @@ main{
                 margin: 20rem 20rem;
                 position: relative;
                 background-color: white;
+                
             }
-            .advisory__item::after {
+            .advisory__item::after, .advisory__item::before {
                 content: '';
                 position: absolute;
                 left: 0;

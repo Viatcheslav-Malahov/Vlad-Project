@@ -462,6 +462,12 @@ main .team .team__wrapper .team__wrapper_top {
   display: flex;
   margin-top: 88rem;
 }
+@media screen and (max-width: 400px) {
+  main .team .team__wrapper .team__wrapper_top {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 main .team .team__wrapper .team__wrapper_bottom {
   display: flex;
   justify-content: space-around;
@@ -475,6 +481,12 @@ main .team .team__wrapper .team__wrapper_bottom {
   }
   main .team .team__wrapper .team__wrapper_bottom .team__item {
     margin-top: 50rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .team .team__wrapper .team__wrapper_bottom {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 main .advisory h1 {
@@ -506,6 +518,14 @@ main .advisory .advisory__wrapper {
 @media screen and (max-width: 860px) {
   main .advisory .advisory__wrapper {
     grid-template-columns: 1fr 1fr;
+    padding: 0 296rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .advisory .advisory__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
 }
 main .advisory .advisory__wrapper .advisory__item {
@@ -517,7 +537,7 @@ main .advisory .advisory__wrapper .advisory__item {
   position: relative;
   background-color: white;
 }
-main .advisory .advisory__wrapper .advisory__item::after {
+main .advisory .advisory__wrapper .advisory__item::after, main .advisory .advisory__wrapper .advisory__item::before {
   content: "";
   position: absolute;
   left: 0;
