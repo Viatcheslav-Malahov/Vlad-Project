@@ -46,6 +46,8 @@ document.querySelector('.sendFormBtn').addEventListener('click', (event) => {
         }           
     })
 
+
+
     formInfo['Activities'] = Activities 
     formInfo['memberBecause'] = memeberBecause
     formInfo['notifications'] = notifications.checked
@@ -63,8 +65,9 @@ document.querySelector('.sendFormBtn').addEventListener('click', (event) => {
     //http://95.213.249.252/db
     //http://127.0.0.1:5501/
 
-    xhr.onload = ()=>{
-        document.location.href = './index.html'
+    xhr.addEventListener('load',transferComplete ,false);
+    function transferComplete(evt){
+        window.location.href = './inex.html'
     }
 })
 
