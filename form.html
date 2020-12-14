@@ -63,8 +63,6 @@
 
         <main>
 
-            <form action="POST" method="*" id="mainForm">
-            </form>
 
             <section class="main__section">
 
@@ -72,13 +70,13 @@
 
                     <label for="UserName">What is your name?</label>
                     <div class="inpup__wrapper_box">
-                        <input form="mainForm" type="text" name="UserName" id="UserName">
+                        <input class="mainFormText" type="text" name="UserName" id="UserName">
                     </div>
 
 
                     <label for="UserEmail">Best email address?</label>
                     <div class="inpup__wrapper_box">
-                        <input form="mainForm" type="text" name="UserEmail" id="UserEmail">
+                        <input class="mainFormText" type="text" name="UserEmail" id="UserEmail">
                     </div>
 
                 </div>
@@ -94,7 +92,7 @@
                     <div class="checkbox__wrapper_item">
 
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="farmerCheckbox">
+                            <input class="mainFormCheck" type="checkbox" id="farmerCheckbox" name="farmerCheckbox">
                             <label for="farmerCheckbox"></label>
                         </div>
 
@@ -104,7 +102,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="processorCheckbox">
+                            <input class="mainFormCheck" type="checkbox" id="processorCheckbox" name="processorCheckbox">
                             <label for="processorCheckbox"></label>
                         </div>
                         <p>Processor</p>
@@ -112,7 +110,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="producerCheckbox">
+                            <input class="mainFormCheck" type="checkbox" id="producerCheckbox" name="producerCheckbox">
                             <label for="producerCheckbox"></label>
                         </div>
                         <p>Producer</p>
@@ -120,7 +118,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="scientistCheckbox">
+                            <input class="mainFormCheck" type="checkbox" id="scientistCheckbox" name="scientistCheckbox">
                             <label for="scientistCheckbox"></label>
                         </div>
                         <p>Scientist</p>
@@ -128,7 +126,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="regulatorCheckbox">
+                            <input class="mainFormCheck" type="checkbox" id="regulatorCheckbox" name="regulatorCheckbox">
                             <label for="regulatorCheckbox"></label>
                         </div>
                         <p>Regilator</p>
@@ -137,7 +135,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="policyMakerCheckbox">
+                            <input class="mainFormCheck" type="checkbox" id="policyMakerCheckbox" name="policyMakerCheckbox">
                             <label for="policyMakerCheckbox"></label>
                         </div>
                         <p>Policy Maker</p>
@@ -146,7 +144,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="transportProviderCheckbox">
+                            <input class="mainFormCheck" type="checkbox" id="transportProviderCheckbox" name="transportProviderCheckbox">
                             <label for="transportProviderCheckbox"></label>
                         </div>
                         <p>Transport Provider</p>
@@ -155,7 +153,7 @@
                     <div class="checkbox__wrapper_item">
                         <div>
                             <div class="checkbox__wrapper_item_box">
-                                <input form="mainForm" type="checkbox" id="individualCheckbox">
+                                <input class="mainFormCheck" type="checkbox" id="individualCheckbox" name="individualCheckbox"> 
                                 <label for="individualCheckbox"></label>
                             </div>
 
@@ -166,7 +164,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="consortiumCheckbox">
+                            <input class="mainFormCheck" type="checkbox" id="consortiumCheckbox" name="consortiumCheckbox">
                             <label for="consortiumCheckbox"></label>
                         </div>
                         <p>Consortium</p>
@@ -174,7 +172,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="investorCheckbox">
+                            <input class="mainFormCheck" type="checkbox" id="investorCheckbox" name="investorCheckbox">
                             <label for="investorCheckbox"></label>
                         </div>
 
@@ -183,7 +181,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="otherCheckbox">
+                            <input class="mainFormCheck" type="checkbox" id="otherCheckbox" name="otherCheckbox">
                             <label for="otherCheckbox"></label>
                         </div>
                         <p>Other</p>
@@ -196,7 +194,7 @@
                 <div class="input__wrapper input__wrapper_2">
                     <label for="UserBased">Where are you based?</label>
                     <div class="select__wrapper_box">
-                        <select form="mainForm" name="UserBased" id="UserBased">
+                        <select class="mainFormText" name="UserBased" id="UserBased" name="UserBased">
                             <option value="AX">AALAND ISLANDS</option>
                             <option value="AF">AFGHANISTAN</option>
                             <option value="AL">ALBANIA</option>
@@ -434,7 +432,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="learnOffsetting">
+                            <input class="mainFormCheck" type="checkbox" id="learnOffsetting" name="learnOffsetting">
                             <label for="learnOffsetting"></label>
                         </div>
 
@@ -443,7 +441,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="rewardOffsetting">
+                            <input class="mainFormCheck" type="checkbox" id="rewardOffsetting" name="rewardOffsetting">
                             <label for="rewardOffsetting"></label>
                         </div>
 
@@ -454,7 +452,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="connectStakeholder">
+                            <input class="mainFormCheck" type="checkbox" id="connectStakeholder" name="connectStakeholder">
                             <label for="connectStakeholder"></label>
                         </div>
                         <p> I want to connect with other stakeholders
@@ -463,7 +461,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="carbonGoods">
+                            <input class="mainFormCheck" type="checkbox" id="carbonGoods" name="carbonGoods">
                             <label for="carbonGoods"></label>
                         </div>
                         <p> I am interested in learning more about carbon negative goods
@@ -472,7 +470,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="O2_methotodogy">
+                            <input class="mainFormCheck" type="checkbox" id="O2_methotodogy" name="O2_methotodogy">
                             <label for="O2_methotodogy"></label>
                         </div>
                         <p> I want to know more about O2+ methodology
@@ -482,7 +480,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="02_mission">
+                            <input class="mainFormCheck" type="checkbox" id="02_mission" name="02_mission">
                             <label for="02_mission"></label>
                         </div>
                         <p> I am here to contribute to O2+ mission </p>
@@ -498,7 +496,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="agreementCheck">
+                            <input class="mainFormCheck" type="checkbox" id="agreementCheck" name="agreementCheck">
                             <label for="agreementCheck"></label>
                         </div>
                         <p>I agree to our Terms of Use, Privacy Policy and Cookie Policy</p>
@@ -506,7 +504,7 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input form="mainForm" type="checkbox" id="notificationCheck">
+                            <input class="mainFormCheck" type="checkbox" id="notificationCheck" name="notificationCheck">
                             <label for="notificationCheck"></label>
                         </div>
                         <p>Keep me notified about last updates</p>
@@ -518,7 +516,7 @@
                 </div>
 
                 <div class="main__section_buttonBox">
-                    <button form="mainForm" type="submit">BECOME A MEMBER</button>
+                    <button class="sendFormBtn" type="submit">BECOME A MEMBER</button>
                 </div>
 
             </section>
@@ -596,6 +594,7 @@
     </footer>
 
     <script src="./js/navbar.js"></script>
+    <script src="./js/formSend.js"></script>
 </body>
 
 </html>
