@@ -145,7 +145,7 @@ nav .fas {
 }
 
 header {
-  margin-top: -10px;
+  margin-top: 0;
   padding-bottom: 144rem;
   color: white;
   background: url("../images/bg.svg") no-repeat;
@@ -164,6 +164,7 @@ header .Header__Mobile_Pic {
     padding-bottom: 0rem;
     display: flex;
     flex-direction: column;
+    padding-bottom: 100rem;
   }
 }
 header .header__right {
@@ -211,7 +212,7 @@ header .header__right h1 {
 }
 @media screen and (max-width: 960px) {
   header .header__right h1 {
-    margin-top: 10rem;
+    margin-top: 100rem;
   }
 }
 header .header__right h2 {
@@ -295,6 +296,8 @@ main .main__section .input__wrapper label {
   margin-bottom: 4rem;
 }
 main .main__section .input__wrapper input {
+  z-index: 10;
+  position: relative;
   outline: none;
   border: none;
   font-family: Bender;
@@ -303,8 +306,7 @@ main .main__section .input__wrapper input {
   height: 64rem;
   width: 600rem;
   margin-bottom: 36rem;
-  border-radius: 5px;
-  background-color: wheat;
+  background-color: white;
   clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
 }
 @media screen and (max-width: 600px) {
@@ -312,7 +314,27 @@ main .main__section .input__wrapper input {
     width: 100%;
   }
 }
+main .main__section .input__wrapper .inpup__wrapper_box {
+  position: relative;
+}
+main .main__section .input__wrapper .inpup__wrapper_box::after {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  height: 66rem;
+  width: 602rem;
+  background-color: #C1DADA;
+  z-index: 1;
+  clip-path: polygon(11rem 0%, calc(100% - 11rem) 0%, 100% 11rem, 100% calc(100% - 11rem), calc(100% - 11rem) 100%, 11rem 100%, 0% calc(100% - 11rem), 0% 11rem);
+}
+@media screen and (max-width: 600px) {
+  main .main__section .input__wrapper .inpup__wrapper_box::after {
+    width: calc(100% + 3rem);
+  }
+}
 main .main__section .input__wrapper select {
+  z-index: 10;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -326,16 +348,34 @@ main .main__section .input__wrapper select {
   width: 600rem;
   margin-bottom: 36rem;
   border-radius: 5px;
-  background-color: wheat;
   background: url("../images/select_bg.svg") no-repeat;
   background-size: 15rem;
   background-position: 95% 50%;
-  background-color: wheat;
+  background-color: white;
   clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
 }
 @media screen and (max-width: 600px) {
   main .main__section .input__wrapper select {
     width: 100%;
+  }
+}
+main .main__section .input__wrapper .select__wrapper_box {
+  position: relative;
+}
+main .main__section .input__wrapper .select__wrapper_box::after {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  height: 66rem;
+  width: 602rem;
+  z-index: -1;
+  clip-path: polygon(12rem 0%, calc(100% - 12rem) 0%, 100% 12rem, 100% calc(100% - 12rem), calc(100% - 12rem) 100%, 12rem 100%, 0% calc(100% - 12rem), 0% 12rem);
+  background-color: blue;
+}
+@media screen and (max-width: 600px) {
+  main .main__section .input__wrapper .select__wrapper_box::after {
+    width: calc(100% + 3rem);
   }
 }
 main .main__section .checkbox__wrapper {
@@ -367,10 +407,68 @@ main .main__section .checkbox__wrapper .checkbox__wrapper_item {
   justify-content: right;
   align-items: center;
 }
-main .main__section .checkbox__wrapper .checkbox__wrapper_item input {
-  height: 32rem;
+main .main__section .checkbox__wrapper .checkbox__wrapper_item p {
+  margin-left: 15rem;
+}
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:checked,
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:checked + label,
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:not(:checked) + label,
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=radio]:checked + label,
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=radio]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: #82D8D8;
+  z-index: 10;
+  width: 35rem;
+  height: 35rem;
+  clip-path: polygon(5rem 0, calc(100% - 5rem) 0, 100% 5rem, 100% calc(100% - 5rem), calc(100% - 5rem) 100%, 5rem 100%, 0 calc(100% - 5rem), 0 5rem);
+}
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:checked + label:before,
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
   width: 32rem;
-  margin-right: 15rem;
+  height: 32rem;
+  clip-path: polygon(4rem 0, calc(100% - 4rem) 0, 100% 4rem, 100% calc(100% - 4rem), calc(100% - 4rem) 100%, 4rem 100%, 0 calc(100% - 4rem), 0 4rem);
+  background-color: white;
+  z-index: -1;
+}
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:checked + label:after,
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+}
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:checked + label:after,
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:not(:checked) + label:after {
+  left: 7rem;
+  top: 7rem;
+  width: 10px;
+  height: 10rem;
+  border-radius: 1px;
+  border-left: 6rem solid blue;
+  border-bottom: 6rem solid blue;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:not(:checked) + label:after,
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=radio]:not(:checked) + label:after {
+  opacity: 0;
+}
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=checkbox]:checked + label:after,
+main .main__section .checkbox__wrapper .checkbox__wrapper_item .checkbox__wrapper_item_box input[type=radio]:checked + label:after {
+  opacity: 1;
+  background-color: white;
+  color: white;
 }
 main .main__section .input__wrapper_2 {
   margin-top: 36rem;

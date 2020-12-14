@@ -143,7 +143,6 @@ header {
   margin-top: -10px;
   padding-bottom: 144rem;
   color: white;
-  height: calc(100vh - 55px);
   background: url("../images/bg.svg") no-repeat;
   background-size: 100%;
   background-color: #2D4275;
@@ -186,20 +185,16 @@ header .Header__Mobile_Pic {
 header .header__right {
   padding-left: 16%;
   padding-right: 30%;
+  padding-bottom: 100rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (max-width: 1200px) {
-  header .header__right {
-    padding-left: 5%;
-  }
-}
 @media screen and (max-width: 960px) {
   header .header__right {
     width: 100%;
-    padding: 60rem 7% 0 7%;
+    padding: 60rem 7% 100rem 7%;
     text-align: center;
   }
 }
@@ -458,6 +453,12 @@ main .team .team__wrapper .team__item {
   text-align: center;
   margin: 0 20rem;
 }
+main .team .team__wrapper .team__item img {
+  height: 114rem;
+  margin: 64rem 0 24rem 0;
+  background-color: blue;
+  border-radius: 50%;
+}
 main .team .team__wrapper .team__wrapper_top {
   display: flex;
   margin-top: 88rem;
@@ -466,6 +467,9 @@ main .team .team__wrapper .team__wrapper_top {
   main .team .team__wrapper .team__wrapper_top {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  main .team .team__wrapper .team__wrapper_top .team__item {
+    margin-top: 50rem;
   }
 }
 main .team .team__wrapper .team__wrapper_bottom {
@@ -529,24 +533,36 @@ main .advisory .advisory__wrapper {
   }
 }
 main .advisory .advisory__wrapper .advisory__item {
-  clip-path: polygon(30rem 0%, calc(100% - 30rem) 0%, 100% 0, 100% calc(100% - 30rem), calc(100% - 30rem) 100%, 30rem 100%, 0% calc(100% - 30rem), 0 0);
-  width: 272rem;
-  height: 360rem;
+  clip-path: polygon(28rem 0%, calc(100% - 28rem) 0%, 100% 0, 100% calc(100% - 28rem), calc(100% - 28rem) 100%, 28rem 100%, 0% calc(100% - 28rem), 0 0);
+  width: 277rem;
+  height: 365rem;
   text-align: center;
   margin: 20rem 20rem;
   position: relative;
-  background-color: white;
+  background-color: #DBE8EB;
+}
+main .advisory .advisory__wrapper .advisory__item img {
+  height: 114rem;
+  margin-top: 64rem;
+  background-color: blue;
+  border-radius: 50%;
+}
+main .advisory .advisory__wrapper .advisory__item h2 {
+  margin-top: 27rem;
+}
+main .advisory .advisory__wrapper .advisory__item h3 {
+  margin-top: 6rem;
 }
 main .advisory .advisory__wrapper .advisory__item::after, main .advisory .advisory__wrapper .advisory__item::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 274rem;
-  height: 362rem;
+  left: 2rem;
+  top: 2rem;
+  width: 272rem;
+  height: 360rem;
   clip-path: polygon(30rem 0%, calc(100% - 30rem) 0%, 100% 0, 100% calc(100% - 30rem), calc(100% - 30rem) 100%, 30rem 100%, 0% calc(100% - 30rem), 0 0);
   text-align: center;
-  background-color: #DBE8EB;
+  background-color: white;
   z-index: -1;
 }
 

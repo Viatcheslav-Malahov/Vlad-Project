@@ -243,6 +243,11 @@ main .main__section .main__wrapper {
   justify-content: center;
   font-family: Bender-bold;
 }
+@media screen and (max-width: 600px) {
+  main .main__section .main__wrapper {
+    width: 80%;
+  }
+}
 main .main__section .main__wrapper label {
   color: #1f2d50;
   font-size: 22rem;
@@ -250,6 +255,7 @@ main .main__section .main__wrapper label {
   margin-bottom: 4rem;
 }
 main .main__section .main__wrapper input {
+  z-index: 10;
   outline: none;
   border: none;
   font-family: Bender;
@@ -258,9 +264,32 @@ main .main__section .main__wrapper input {
   height: 64rem;
   width: 600rem;
   margin-bottom: 36rem;
-  border-radius: 5px;
-  background-color: wheat;
+  background-color: white;
   clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
+}
+@media screen and (max-width: 600px) {
+  main .main__section .main__wrapper input {
+    width: 100%;
+  }
+}
+main .main__section .main__wrapper .inputBox {
+  position: relative;
+}
+main .main__section .main__wrapper .inputBox::after {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  height: 66rem;
+  width: 603rem;
+  background-color: #C1DADA;
+  z-index: -1;
+  clip-path: polygon(11rem 0%, calc(100% - 11rem) 0%, 100% 11rem, 100% calc(100% - 11rem), calc(100% - 11rem) 100%, 11rem 100%, 0% calc(100% - 11rem), 0% 11rem);
+}
+@media screen and (max-width: 600px) {
+  main .main__section .main__wrapper .inputBox::after {
+    width: calc(100% + 3rem);
+  }
 }
 main .main__section .main__wrapper .main__wrapper_buttonBox {
   display: flex;

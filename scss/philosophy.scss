@@ -150,7 +150,6 @@ header {
     margin-top: -10px;
     padding-bottom: 144rem;
     color: white;
-    height: calc(100vh - 55px);
     //clip-path: polygon(40rem 0%, calc(100% - 40rem) 0%, 100% 40rem, 100% 100%, 70% 100%, 30% 100%, 0% 100%, 0 40rem);    
     .Header__Mobile_Pic{
         display: none;
@@ -187,14 +186,14 @@ header {
     .header__right{
         padding-left: 16%;
         padding-right: 30%;
+        padding-bottom: 100rem;
         width: 100%;
-
-        @media screen and (max-width: 1200px){
-            padding-left: 5%;
+        @media screen and (max-width: 1200px) {
+            
         }
         @media screen and (max-width: 960px) {
             width: 100%;
-            padding: 60rem 7% 0 7%;
+            padding: 60rem 7% 100rem 7%;
             text-align: center;
         }
         @media screen and (max-width: 300px) {
@@ -445,6 +444,12 @@ main{
                 height: 360rem;
                 text-align: center;
                 margin: 0 20rem;
+                img{
+                    height: 114rem;
+                    margin: 64rem 0 24rem 0;
+                    background-color: blue;
+                    border-radius: 50%;
+                }
             }
 
             .team__wrapper_top {
@@ -453,7 +458,9 @@ main{
                 @media screen and (max-width: 400px){
                     display: grid;
                     grid-template-columns: 1fr;
-
+                    .team__item {
+                        margin-top: 50rem;
+                    }
                 }
             }
 
@@ -512,9 +519,9 @@ main{
 
             @media screen and (max-width: 860px){
                 grid-template-columns: 1fr 1fr ;
-                padding: 0 296rem;
-  
+                padding: 0 296rem;  
             }
+            
             @media screen and (max-width: 400px){
                display: flex;
                flex-direction: column;
@@ -522,29 +529,43 @@ main{
             }
             .advisory__item{
 
-                clip-path: polygon(30rem 0%, calc(100% - 30rem) 0%, 100% 0, 100% calc(100% - 30rem), calc(100% - 30rem) 100%, 30rem 100%, 0% calc(100% - 30rem), 0 0); 
-                width: 272rem;
-                height: 360rem;
+                clip-path: polygon(28rem 0%, calc(100% - 28rem) 0%,
+                100% 0, 100% calc(100% - 28rem), calc(100% - 28rem) 100%,
+                28rem 100%, 0% calc(100% - 28rem), 0 0); 
+                width: 277rem;
+                height: 365rem;
                 text-align: center;
                 margin: 20rem 20rem;
                 position: relative;
-                background-color: white;
+                background-color: #DBE8EB;
                 
+                img{
+                    height: 114rem;
+                    margin-top: 64rem;
+                    background-color: blue;
+                    border-radius: 50%;
+                }
+                h2{
+                    margin-top: 27rem;
+                }
+                h3{
+                    margin-top: 6rem;
+                }
             }
             .advisory__item::after, .advisory__item::before {
                 content: '';
                 position: absolute;
-                left: 0;
-                top: 0;
-                width: 274rem;
-                height: 362rem;
-                clip-path: polygon(30rem 0%, calc(100% - 30rem) 0%, 100% 0, 100% calc(100% - 30rem), calc(100% - 30rem) 100%, 30rem 100%, 0% calc(100% - 30rem), 0 0); 
+                left: 2rem;
+                top: 2rem;
+                width: 272rem;
+                height: 360rem;
+                clip-path: polygon(30rem 0%, calc(100% - 30rem) 0%, 
+                100% 0, 100% calc(100% - 30rem), calc(100% - 30rem) 100%,
+                30rem 100%, 0% calc(100% - 30rem), 0 0); 
                 text-align: center;
-                background-color: #DBE8EB;
+                background-color: white;
                 z-index: -1;
             }
-
-            
 
         }
 

@@ -245,6 +245,9 @@ main{
             flex-direction: column;
             justify-content: center;
             font-family: Bender-bold;
+            @media screen and (max-width:600px){
+                width: 80%;
+            }
             
             label{
                 color: rgba(31, 45, 80, 1);
@@ -253,6 +256,7 @@ main{
                 margin-bottom: 4rem;
             }
             input {
+                z-index: 10;
                 outline: none;
                 border: none;
                 font-family: Bender;
@@ -262,9 +266,34 @@ main{
                 width: 600rem;
                 margin-bottom: 36rem;
                 //border: 1px solid #C1DADA;
-                border-radius: 5px;
-                background-color: wheat;
-                clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
+                background-color: white;
+                clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%,
+                100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 
+                100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
+                @media screen and (max-width:600px){
+                    width: 100%;
+                }
+            }
+            .inputBox{
+                position: relative;
+            }
+            .inputBox::after {
+                content: '';
+                position: absolute;
+                top: -1rem;
+                left: -1rem;
+                height: 66rem;
+                width: 603rem;
+                background-color:#C1DADA;
+                z-index: -1;
+                clip-path: polygon(11rem 0%, calc(100% - 11rem) 0%,
+                100% 11rem, 100% calc(100% - 11rem), 
+                calc(100% - 11rem) 100%, 11rem 100%, 
+                0% calc(100% - 11rem), 0% 11rem);
+                @media screen and (max-width:600px){
+                    width: calc(100% + 3rem);
+                }
+
             }
             .main__wrapper_buttonBox{
                 display: flex;
