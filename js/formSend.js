@@ -1,9 +1,12 @@
 let formInfo = {}
-
+let Activities = []
+let memeberBecause = []
 let inputTextValues = document.querySelectorAll('.mainFormText')
-let inputCheckValues = document.querySelectorAll('.mainFormCheck')
-
+let inputCheckValuesActivities = document.querySelectorAll('.mainFormCheckActivities')
+let inputCheckValuesMember = document.querySelectorAll('.mainFormCheckMember')
 let Agreemnet = document.querySelector('#agreementCheck')
+let notifications = document.querySelector('#notificationCheck')
+
 
 document.querySelector('.sendFormBtn').addEventListener('click', (event) => {
     event.preventDefault()
@@ -31,26 +34,37 @@ document.querySelector('.sendFormBtn').addEventListener('click', (event) => {
     }
 
 
-
-    inputCheckValues.forEach(element => {
-        if (element.checked === true)
-            formInfo[element.name] = element.value
+    inputCheckValuesMember.forEach(element => {
+        if (element.checked === true){
+            memeberBecause.push(element.name)   
+        }           
     })
 
+    inputCheckValuesActivities.forEach(element => {
+        if (element.checked === true){
+            Activities.push(element.name)   
+        }           
+    })
+
+    formInfo['Activities'] = Activities 
+    formInfo['memberBecause'] = memeberBecause
+    formInfo['notifications'] = notifications.checked
 
     function isNotEmpty(a) {
         return a.value != '';
     }
-    // for (let x =0 ; x < inputValues.length ; x++){
-    //     if( isNotEmpty(inputValues[x]) == false || Agreemnet.checked == false){
-    //         y++
-    //     }
-    // }
+    
+
     let xhr = new XMLHttpRequest();
     let oData = new FormData()
     oData.append('form', JSON.stringify(formInfo))
     xhr.open('POST', 'http://95.213.249.252/db', false)
     xhr.send(oData)
+    //http://95.213.249.252/db
+    //http://127.0.0.1:5501/
 
+    xhr.onload = ()=>{
+        document.location.href = './index.html'
+    }
 })
 
