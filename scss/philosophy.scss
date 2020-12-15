@@ -444,10 +444,12 @@ main{
                 height: 360rem;
                 text-align: center;
                 margin: 0 20rem;
+                h2{
+                    text-transform: uppercase;
+                }
                 img{
-                    height: 114rem;
+                    height: 130rem;
                     margin: 64rem 0 24rem 0;
-                    background-color: blue;
                     border-radius: 50%;
                 }
             }
@@ -529,9 +531,9 @@ main{
             }
             .advisory__item{
 
-                clip-path: polygon(28rem 0%, calc(100% - 28rem) 0%,
-                100% 0, 100% calc(100% - 28rem), calc(100% - 28rem) 100%,
-                28rem 100%, 0% calc(100% - 28rem), 0 0); 
+                clip-path: polygon(30rem 0%, calc(100% - 30rem) 0%,
+                100% 0, 100% calc(100% - 30rem), calc(100% - 30rem) 100%,
+                30rem 100%, 0% calc(100% - 30rem), 0 0); 
                 width: 277rem;
                 height: 365rem;
                 text-align: center;
@@ -540,12 +542,12 @@ main{
                 background-color: #DBE8EB;
                 
                 img{
-                    height: 114rem;
+                    height: 130rem;
                     margin-top: 64rem;
-                    background-color: blue;
                     border-radius: 50%;
                 }
                 h2{
+                    text-transform: uppercase;
                     margin-top: 27rem;
                 }
                 h3{
@@ -557,11 +559,11 @@ main{
                 position: absolute;
                 left: 2rem;
                 top: 2rem;
-                width: 272rem;
-                height: 360rem;
-                clip-path: polygon(30rem 0%, calc(100% - 30rem) 0%, 
-                100% 0, 100% calc(100% - 30rem), calc(100% - 30rem) 100%,
-                30rem 100%, 0% calc(100% - 30rem), 0 0); 
+                width: 273rem;
+                height: 361rem;
+                clip-path: polygon(29rem 0%, calc(100% - 29rem) 0%, 
+                100% 0, 100% calc(100% - 29rem), calc(100% - 29rem) 100%,
+                29rem 100%, 0% calc(100% - 29rem), 0 0); 
                 text-align: center;
                 background-color: white;
                 z-index: -1;
@@ -580,7 +582,8 @@ footer {
         padding: 30rem 0 0 0 ;
     }
     background-color: #2D4275;
-    clip-path: polygon(5vh 0, calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 0 100%, 0 5vh);    font-family: Bender;
+    clip-path: polygon(40rem 0%, calc(100% - 40rem) 0%, 100% 40rem, 100% 100%, 70% 100%, 30% 100%, 0% 100%, 0 40rem);    
+    font-family: Bender;
     font-weight: 400;
     font-size: 18rem;
     line-height: 32rem;
@@ -615,10 +618,11 @@ footer {
     .footer__item1 {
         font-weight: 700;
         img {
-            margin-bottom: 62rem;
+            margin-bottom: 42rem;
+            margin-top: 8rem;
         }
         p {
-            margin-bottom: 16rem;
+            margin-bottom: 18rem;
             font-family: Bender;
             font-size: 18rem;
             font-weight: 700;
@@ -633,6 +637,7 @@ footer {
             font-style: normal;
             font-weight: bold;
             font-size: 24rem;
+            line-height: 40rem;
         }
     }
     .footer__item2 {

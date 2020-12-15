@@ -227,6 +227,9 @@ header .header__right h3 {
 main {
   font-family: Bender-bold;
   margin: 176rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main h1 {
   font-size: 32rem;
@@ -242,22 +245,63 @@ main .main__wrapper .main__item {
   display: flex;
   align-items: center;
 }
+main .main__wrapper .main__item .main__logo {
+  width: 200rem;
+}
 main .main__wrapper .main__item .main_h1_1 {
   width: 500rem;
+  text-align: left;
 }
 main .main__wrapper .main__item img {
   margin-right: 150rem;
+}
+main .main__wrapper .main__item .main_h1_2 {
+  width: 100rem;
+}
+main .main__wrapper .main__item .mobile__img {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  main .main__wrapper .main__item {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .main__wrapper .main__item img {
+    margin: 0;
+  }
+  main .main__wrapper .main__item .mobile__img {
+    display: block;
+    margin: 100rem 0;
+  }
+  main .main__wrapper .main__item .device__img {
+    display: none;
+  }
+  main .main__wrapper .main__item .main_h1_1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30rem;
+  }
+  main .main__wrapper .main__item .main_h1_2 {
+    width: 100%;
+    text-align: center;
+  }
 }
 main .main__wrapper .main__separator {
   display: flex;
   justify-content: center;
   margin: 75rem 0;
+  margin-left: 50rem;
+}
+@media screen and (max-width: 800px) {
+  main .main__wrapper .main__separator {
+    margin-left: 0;
+  }
 }
 
 footer {
   padding: 131rem 0 0 0;
   background-color: #2D4275;
-  clip-path: polygon(5vh 0, calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 0 100%, 0 5vh);
+  clip-path: polygon(40rem 0%, calc(100% - 40rem) 0%, 100% 40rem, 100% 100%, 70% 100%, 30% 100%, 0% 100%, 0 40rem);
   font-family: Bender;
   font-weight: 400;
   font-size: 18rem;
@@ -303,10 +347,11 @@ footer .footer__item1 {
   font-weight: 700;
 }
 footer .footer__item1 img {
-  margin-bottom: 62rem;
+  margin-bottom: 42rem;
+  margin-top: 8rem;
 }
 footer .footer__item1 p {
-  margin-bottom: 16rem;
+  margin-bottom: 18rem;
   font-family: Bender;
   font-size: 18rem;
   font-weight: 700;
@@ -321,6 +366,7 @@ footer .footer__item h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 24rem;
+  line-height: 40rem;
 }
 footer .footer__item2 {
   font-weight: 400;

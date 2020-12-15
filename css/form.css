@@ -244,13 +244,18 @@ main {
 }
 @media screen and (max-width: 600px) {
   main {
-    padding: 0 20rem;
+    padding: 0 10rem;
   }
 }
 main .main__section {
   padding: 150rem 0;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  main .main__section {
+    width: 80%;
+  }
 }
 main .main__section button {
   position: relative;
@@ -382,6 +387,27 @@ main .main__section .checkbox__wrapper {
   font-family: Bender;
   font-size: 22rem;
   color: #1f2d50;
+}
+main .main__section .checkbox__wrapper textarea {
+  margin: 40rem 40rem;
+  padding: 20rem 50rem;
+  width: 500rem;
+  height: 300rem;
+  z-index: 10;
+  position: relative;
+  outline: none;
+  border: none;
+  font-family: Bender;
+  font-size: 22rem;
+  margin-bottom: 36rem;
+  background-color: white;
+  clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
+}
+@media screen and (max-width: 600px) {
+  main .main__section .checkbox__wrapper textarea {
+    width: 250rem;
+    height: 250rem;
+  }
 }
 main .main__section .checkbox__wrapper .checkbox__line {
   margin-top: 10rem;
@@ -532,7 +558,7 @@ main .main__section .main__section_buttonBox {
 footer {
   padding: 131rem 0 0 0;
   background-color: #2D4275;
-  clip-path: polygon(5vh 0, calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 0 100%, 0 5vh);
+  clip-path: polygon(40rem 0%, calc(100% - 40rem) 0%, 100% 40rem, 100% 100%, 70% 100%, 30% 100%, 0% 100%, 0 40rem);
   font-family: Bender;
   font-weight: 400;
   font-size: 18rem;
@@ -578,10 +604,11 @@ footer .footer__item1 {
   font-weight: 700;
 }
 footer .footer__item1 img {
-  margin-bottom: 62rem;
+  margin-bottom: 42rem;
+  margin-top: 8rem;
 }
 footer .footer__item1 p {
-  margin-bottom: 16rem;
+  margin-bottom: 18rem;
   font-family: Bender;
   font-size: 18rem;
   font-weight: 700;
@@ -596,6 +623,7 @@ footer .footer__item h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 24rem;
+  line-height: 40rem;
 }
 footer .footer__item2 {
   font-weight: 400;

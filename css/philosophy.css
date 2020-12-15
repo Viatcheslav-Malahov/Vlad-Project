@@ -453,10 +453,12 @@ main .team .team__wrapper .team__item {
   text-align: center;
   margin: 0 20rem;
 }
+main .team .team__wrapper .team__item h2 {
+  text-transform: uppercase;
+}
 main .team .team__wrapper .team__item img {
-  height: 114rem;
+  height: 130rem;
   margin: 64rem 0 24rem 0;
-  background-color: blue;
   border-radius: 50%;
 }
 main .team .team__wrapper .team__wrapper_top {
@@ -533,7 +535,7 @@ main .advisory .advisory__wrapper {
   }
 }
 main .advisory .advisory__wrapper .advisory__item {
-  clip-path: polygon(28rem 0%, calc(100% - 28rem) 0%, 100% 0, 100% calc(100% - 28rem), calc(100% - 28rem) 100%, 28rem 100%, 0% calc(100% - 28rem), 0 0);
+  clip-path: polygon(30rem 0%, calc(100% - 30rem) 0%, 100% 0, 100% calc(100% - 30rem), calc(100% - 30rem) 100%, 30rem 100%, 0% calc(100% - 30rem), 0 0);
   width: 277rem;
   height: 365rem;
   text-align: center;
@@ -542,12 +544,12 @@ main .advisory .advisory__wrapper .advisory__item {
   background-color: #DBE8EB;
 }
 main .advisory .advisory__wrapper .advisory__item img {
-  height: 114rem;
+  height: 130rem;
   margin-top: 64rem;
-  background-color: blue;
   border-radius: 50%;
 }
 main .advisory .advisory__wrapper .advisory__item h2 {
+  text-transform: uppercase;
   margin-top: 27rem;
 }
 main .advisory .advisory__wrapper .advisory__item h3 {
@@ -558,9 +560,9 @@ main .advisory .advisory__wrapper .advisory__item::after, main .advisory .adviso
   position: absolute;
   left: 2rem;
   top: 2rem;
-  width: 272rem;
-  height: 360rem;
-  clip-path: polygon(30rem 0%, calc(100% - 30rem) 0%, 100% 0, 100% calc(100% - 30rem), calc(100% - 30rem) 100%, 30rem 100%, 0% calc(100% - 30rem), 0 0);
+  width: 273rem;
+  height: 361rem;
+  clip-path: polygon(29rem 0%, calc(100% - 29rem) 0%, 100% 0, 100% calc(100% - 29rem), calc(100% - 29rem) 100%, 29rem 100%, 0% calc(100% - 29rem), 0 0);
   text-align: center;
   background-color: white;
   z-index: -1;
@@ -569,7 +571,7 @@ main .advisory .advisory__wrapper .advisory__item::after, main .advisory .adviso
 footer {
   padding: 131rem 0 0 0;
   background-color: #2D4275;
-  clip-path: polygon(5vh 0, calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 0 100%, 0 5vh);
+  clip-path: polygon(40rem 0%, calc(100% - 40rem) 0%, 100% 40rem, 100% 100%, 70% 100%, 30% 100%, 0% 100%, 0 40rem);
   font-family: Bender;
   font-weight: 400;
   font-size: 18rem;
@@ -615,10 +617,11 @@ footer .footer__item1 {
   font-weight: 700;
 }
 footer .footer__item1 img {
-  margin-bottom: 62rem;
+  margin-bottom: 42rem;
+  margin-top: 8rem;
 }
 footer .footer__item1 p {
-  margin-bottom: 16rem;
+  margin-bottom: 18rem;
   font-family: Bender;
   font-size: 18rem;
   font-weight: 700;
@@ -633,6 +636,7 @@ footer .footer__item h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 24rem;
+  line-height: 40rem;
 }
 footer .footer__item2 {
   font-weight: 400;

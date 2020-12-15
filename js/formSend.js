@@ -5,6 +5,7 @@ let inputTextValues = document.querySelectorAll('.mainFormText')
 let inputCheckValuesActivities = document.querySelectorAll('.mainFormCheckActivities')
 let inputCheckValuesMember = document.querySelectorAll('.mainFormCheckMember')
 let Agreemnet = document.querySelector('#agreementCheck')
+let inputTextArea = document.querySelector('.mainFormTextArea')
 let notifications = document.querySelector('#notificationCheck')
 
 
@@ -50,6 +51,7 @@ document.querySelector('.sendFormBtn').addEventListener('click', (event) => {
 
     formInfo['Activities'] = Activities 
     formInfo['memberBecause'] = memeberBecause
+    formInfo['otherReasonMembership'] = inputTextArea.value
     formInfo['notifications'] = notifications.checked
 
     function isNotEmpty(a) {
@@ -65,9 +67,12 @@ document.querySelector('.sendFormBtn').addEventListener('click', (event) => {
     //http://95.213.249.252/db
     //http://127.0.0.1:5501/
 
-    xhr.addEventListener('load',transferComplete ,false);
-    function transferComplete(evt){
-        window.location.href = './inex.html'
-    }
+    // xhr.addEventListener('loadend' , transferComplete ,false);
+    // function transferComplete(evt){
+    //     document.location.href = './index.html'
+    // }
+
+    document.location.href = './index.html'
+
 })
 

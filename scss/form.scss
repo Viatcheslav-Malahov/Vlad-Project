@@ -243,12 +243,15 @@ main{
     justify-content: center;
     background-color: rgba(240, 248, 250, 1) ;
     @media screen and (max-width: 600px) {
-        padding: 0 20rem;
+        padding: 0 10rem;
     }
     .main__section{
         padding: 150rem 0;
         display: flex;
-        flex-direction: column;      
+        flex-direction: column;  
+        @media screen and (max-width: 600px) {
+        width: 80%;
+        }
         button {
                 position: relative;
                 margin-top: 52px;
@@ -378,6 +381,26 @@ main{
             font-family: Bender;
             font-size: 22rem;
             color: rgba(31, 45, 80, 1);
+
+            textarea{
+                margin: 40rem 40rem;
+                padding: 20rem 50rem;
+                width: 500rem;
+                height: 300rem;
+                z-index: 10;
+                position: relative;
+                outline: none;
+                border: none;
+                font-family: Bender;
+                font-size: 22rem;
+                margin-bottom: 36rem;
+                background-color: white;
+                clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
+                @media screen and (max-width: 600px) {
+                    width: 250rem;
+                    height: 250rem;
+                }
+            }
 
             .checkbox__line{
                 margin-top: 10rem;
@@ -548,7 +571,8 @@ footer {
         padding: 30rem 0 0 0 ;
     }
     background-color: #2D4275;
-    clip-path: polygon(5vh 0, calc(100% - 5vh) 0, 100% 5vh, 100% 100%, 0 100%, 0 5vh);    font-family: Bender;
+    clip-path: polygon(40rem 0%, calc(100% - 40rem) 0%, 100% 40rem, 100% 100%, 70% 100%, 30% 100%, 0% 100%, 0 40rem);    
+    font-family: Bender;
     font-weight: 400;
     font-size: 18rem;
     line-height: 32rem;
@@ -583,10 +607,11 @@ footer {
     .footer__item1 {
         font-weight: 700;
         img {
-            margin-bottom: 62rem;
+            margin-bottom: 42rem;
+            margin-top: 8rem;
         }
         p {
-            margin-bottom: 16rem;
+            margin-bottom: 18rem;
             font-family: Bender;
             font-size: 18rem;
             font-weight: 700;
@@ -601,6 +626,7 @@ footer {
             font-style: normal;
             font-weight: bold;
             font-size: 24rem;
+            line-height: 40rem;
         }
     }
     .footer__item2 {

@@ -266,7 +266,7 @@ header .header__inp .header__inp_Box {
   height: 67rem;
   box-sizing: border-box;
   background: #D3EDED;
-  clip-path: polygon(2% 0%, 98% 0%, 100% 10%, 100% 90%, 98% 100%, 2% 100%, 0% 90%, 0% 10%);
+  clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
 }
 @media screen and (max-width: 960px) {
   header .header__inp .header__inp_Box {
@@ -310,7 +310,7 @@ header .header__inp button {
   border: none;
   background-color: #82D8D8;
   z-index: 100;
-  clip-path: polygon(2% 0%, 98% 0%, 100% 10%, 100% 90%, 98% 100%, 2% 100%, 0% 90%, 0% 10%);
+  clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
   cursor: pointer;
 }
 header .header__inp button a {
@@ -406,6 +406,9 @@ main {
 .section__content {
   padding: 0 296rem;
   display: flex;
+}
+.section__content a:visited {
+  color: black;
 }
 @media screen and (max-width: 960px) {
   .section__content {
@@ -564,6 +567,9 @@ footer {
     padding: 30rem 0 0 0;
   }
 }
+footer a:visited {
+  color: white;
+}
 footer li {
   cursor: pointer;
 }
@@ -598,10 +604,11 @@ footer .footer__item1 {
   font-weight: 700;
 }
 footer .footer__item1 img {
-  margin-bottom: 62rem;
+  margin-bottom: 42rem;
+  margin-top: 8rem;
 }
 footer .footer__item1 p {
-  margin-bottom: 16rem;
+  margin-bottom: 18rem;
   font-family: Bender;
   font-size: 18rem;
   font-weight: 700;
@@ -616,6 +623,7 @@ footer .footer__item h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 24rem;
+  line-height: 40rem;
 }
 footer .footer__item2 {
   font-weight: 400;
