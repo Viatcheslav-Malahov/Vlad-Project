@@ -62,6 +62,9 @@ nav {
 nav a:visited {
   color: white;
 }
+nav a {
+  color: #fff;
+}
 nav .nav__bar {
   display: none;
 }
@@ -315,6 +318,12 @@ footer {
 }
 footer a:visited {
   color: white;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: #82D8D8;
 }
 footer li {
   cursor: pointer;

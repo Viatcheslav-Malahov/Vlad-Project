@@ -1,89 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O2+</title>
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
-
 <body>
-
-
     <nav>
         <div class="nav__logo">
             <a href="./index.html"><img src="./images/Logo__White.svg" alt="" style="color: white;"></a>
         </div>
         <ul class="nav_links">
-            <li><a href="./philosophy.html">PHILOSOPHY</a></li>
+            <li class=""><a href="./philosophy.html">PHILOSOPHY</a></li>
             <li><a href="./methotodogy.html">METHODOLOGY</a></li>
             <li><a href="./contact.html">CONTACT</a></li>
         </ul>
         <div class="nav__bar">
-            <i class='fas fa-bars'></i>
+            <i class = 'fas fa-bars' ></i>
         </div>
-
+        
         <ul class="nav_links_bar hidden">
             <li><a href="./philosophy.html">PHILOSOPHY</a></li>
             <li><a href="./methotodogy.html">METHODOLOGY</a></li>
             <li><a href="./contact.html">CONTACT</a></li>
         </ul>
-    </nav>
-
-    <header>
-
-        <div class="header__right">
-
-            <h1>CONTACT</h1>
-
-            <h2>
-                O2+ operates Monday - Friday 9am-6pm GMT (London).
-                To contact our team please use the following form below.
-                Alternatively you can email us at <span class="email_span">together@o2plus.org </span>           </h2>
-        </div>
-
-
-
-        <div class="Header__Mobile_Pic">
-            <img src="./images/HeaderPic__mobile.svg" alt="">
-        </div>
-
-    </header>
-
-    <main>
-        <section class="main__section">
-
-            <div class="main__wrapper">
-
-                <label for="UserName">Name<span>*</span></label>
-                <div class="inputBox">
-                    <input type="text" id="UserName" name="UserName">
-                </div>
-
-
-                <label for="UserEmail">Email<span>*</span></label>
-                <div class="inputBox">
-                    <input type="text" id="UserEmail" name="UserEmail">
-                </div>
-
-                <label for="UserMassage">Massage<span>*</span></label>
-                <div class="inputBox">
-                    <input type="textarea" id="UserMassage" name="UserMassage">
-                </div>
-                
-                
-                <div class="main__wrapper_buttonBox">
-                    <button>SEND Message</button>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
+    </nav> 
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/o2plus/30min" style="min-width:320px;height:630px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <!-- Calendly inline widget end -->
     <footer>
         <section class="footer__up">
 
@@ -143,8 +91,7 @@
             <p>Copyright © O2PLUS DAO LTD 2020</p>
         </section>
     </footer>
-
     <script src="./js/navbar.js"></script>
-</body>
 
+</body>
 </html>

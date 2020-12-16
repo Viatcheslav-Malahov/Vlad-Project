@@ -59,6 +59,9 @@ nav {
     height: 100%;
   }
 }
+nav a {
+  color: white;
+}
 nav a:visited {
   color: white;
 }
@@ -407,6 +410,9 @@ main {
   padding: 0 296rem;
   display: flex;
 }
+.section__content a {
+  color: black;
+}
 .section__content a:visited {
   color: black;
 }
@@ -452,7 +458,7 @@ main {
   background-color: #82D8D8;
   background: linear-gradient(80.73deg, #ECF6F6 28.72%, #CDEAEA 92.95%);
   z-index: 100;
-  clip-path: polygon(2% 0%, 98% 0%, 100% 10%, 100% 90%, 98% 100%, 2% 100%, 0% 90%, 0% 10%);
+  clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
   cursor: pointer;
   padding-bottom: 8rem;
 }
@@ -465,7 +471,7 @@ main {
   width: 216rem;
   height: 62rem;
   background-color: #82D8D8;
-  clip-path: polygon(2% 0%, 98% 0%, 100% 10%, 100% 90%, 98% 100%, 2% 100%, 0% 90%, 0% 10%);
+  clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 100% 10rem, 100% calc(100% - 10rem), calc(100% - 10rem) 100%, 10rem 100%, 0% calc(100% - 10rem), 0% 10rem);
   cursor: pointer;
 }
 .section__content button:hover {
@@ -567,8 +573,14 @@ footer {
     padding: 30rem 0 0 0;
   }
 }
+footer a {
+  color: white;
+}
 footer a:visited {
   color: white;
+}
+footer a:hover {
+  color: #82D8D8;
 }
 footer li {
   cursor: pointer;

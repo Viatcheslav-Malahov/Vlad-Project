@@ -61,6 +61,9 @@ nav {
     a:visited {
         color: white;
     }
+    a{
+        color: white;
+    }
     .nav__bar{
         display: none;
     }
@@ -351,6 +354,13 @@ footer {
     color: rgba(255, 255, 255, 1);
     a:visited{
         color: rgba(255, 255, 255, 1);
+    }
+    a{
+        color: rgba(255, 255, 255, 1);
+        
+    }
+    a:hover{
+        color: #82D8D8;               
     }
     li {
         cursor: pointer;

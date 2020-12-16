@@ -12,7 +12,6 @@ html {
 h1,h2,h3,h4,h5,h6 {
     font-size: 1em;
 }
-
 @media screen and (max-width: 1400px) {
     html {
         font-size: 0.8px;
@@ -57,6 +56,9 @@ nav {
         }
     }
     //clip-path: polygon(80rem 0%, calc(100% - 80rem) 0%, 100% 0, 100% calc(100% - 80rem), calc(100% - 80rem) 100%, 80rem 100%, 0% calc(100% - 80rem), 0 0);    display: flex;   
+    a{
+        color: white;
+    }
     a:visited {
         color: white;
     }
@@ -398,7 +400,9 @@ main {
 
 
 .section__content {
-    
+    a{
+        color: black;
+    }
     a:visited{
         color: black;
     }
@@ -448,7 +452,10 @@ main {
         background-color: #82D8D8;
         background: linear-gradient(80.73deg, #ECF6F6 28.72%, #CDEAEA 92.95%);
         z-index: 100;
-        clip-path: polygon(2% 0%, 98% 0%, 100% 10%, 100% 90%, 98% 100%, 2% 100%, 0% 90%, 0% 10%);        
+        clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 
+        100% 10rem, 100% calc(100% - 10rem), 
+        calc(100% - 10rem) 100%, 10rem 100%,
+        0% calc(100% - 10rem), 0% 10rem);        
         cursor: pointer;
         padding-bottom: 8rem;;
     }
@@ -461,7 +468,11 @@ main {
         width: 216rem;
         height: 62rem;
         background-color: #82D8D8;
-        clip-path: polygon(2% 0%, 98% 0%, 100% 10%, 100% 90%, 98% 100%, 2% 100%, 0% 90%, 0% 10%);        
+        clip-path: polygon(10rem 0%, calc(100% - 10rem) 0%, 
+        100% 10rem, 100% calc(100% - 10rem), 
+        calc(100% - 10rem) 100%, 10rem 100%,
+        0% calc(100% - 10rem), 0% 10rem);        
+
         cursor: pointer;
     }
     button:hover {
@@ -560,9 +571,16 @@ footer {
     font-size: 18rem;
     line-height: 32rem;
     color: rgba(255, 255, 255, 1);
+    a{
+        color: rgba(255, 255, 255, 1);
+    }
     a:visited{
         color: rgba(255, 255, 255, 1);
     }
+    a:hover{
+        color: #82D8D8;        
+        ;
+    } 
     li {
         cursor: pointer;
     }
