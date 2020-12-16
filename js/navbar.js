@@ -13,3 +13,19 @@ NavBar.addEventListener('click',()=>{
         document.querySelector('.nav_links_bar').classList.add('hidden')
     }
 })
+
+let nav = document.querySelector('nav')
+
+let sticky = nav.offsetTop
+
+window.onscroll = () => {
+    if (window.pageYOffset >= sticky){
+        nav.classList.add('sticky')
+    }
+    else{
+        nav.classList.remove('sticky')
+    }
+    if (window.pageYOffset <= sticky){
+        nav.classList.remove('sticky') 
+    }
+}

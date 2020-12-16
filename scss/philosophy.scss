@@ -38,12 +38,15 @@ h1,h2,h3,h4,h5,h6 {
 
 
 nav {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 0 16%;
     display: flex;
     justify-content: space-between;
     height: 85px;
     align-items: center;
-    position: relative;
     color: white;
     background-color: #2D4275;
     @media screen and (max-width: 960px) {
@@ -145,6 +148,33 @@ nav {
     .fas {
         //color: rgba(45, 66, 117, 1);
         color:white;
+    }
+
+    .logo__blue {
+        display: none;
+    }
+}
+
+.sticky {
+    background-color: white;
+    color: #2D4275 ;
+    a{
+        color: #2D4275 ;
+    }
+    a:visited {
+        color: #2D4275 ;
+    }
+    a:hover{
+        color: #82D8D8;        
+    }
+    i{
+        color: #2D4275 ;
+    }
+    .logo__white{
+        display: none;
+    }
+    .logo__blue {
+        display: block;
     }
 }
 

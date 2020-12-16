@@ -38,12 +38,15 @@ h1, h2, h3, h4, h5, h6 {
   src: url("../fonts/Jovanny Lemonad - Bender-Black.otf");
 }
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   padding: 0 16%;
   display: flex;
   justify-content: space-between;
   height: 85px;
   align-items: center;
-  position: relative;
   color: white;
   background-color: #2D4275;
 }
@@ -140,6 +143,32 @@ nav ul a:hover {
 }
 nav .fas {
   color: white;
+}
+nav .logo__blue {
+  display: none;
+}
+
+.sticky {
+  background-color: white;
+  color: #2D4275;
+}
+.sticky a {
+  color: #2D4275;
+}
+.sticky a:visited {
+  color: #2D4275;
+}
+.sticky a:hover {
+  color: #82D8D8;
+}
+.sticky i {
+  color: #2D4275;
+}
+.sticky .logo__white {
+  display: none;
+}
+.sticky .logo__blue {
+  display: block;
 }
 
 header {
@@ -248,6 +277,10 @@ main .main__wrapper .main__item {
   display: flex;
   align-items: center;
 }
+main .main__wrapper .main__item div {
+  display: flex;
+  align-items: center;
+}
 main .main__wrapper .main__item .main__logo {
   width: 200rem;
 }
@@ -261,9 +294,6 @@ main .main__wrapper .main__item img {
 main .main__wrapper .main__item .main_h1_2 {
   width: 100rem;
 }
-main .main__wrapper .main__item .mobile__img {
-  display: none;
-}
 @media screen and (max-width: 800px) {
   main .main__wrapper .main__item {
     flex-direction: column;
@@ -272,12 +302,8 @@ main .main__wrapper .main__item .mobile__img {
   main .main__wrapper .main__item img {
     margin: 0;
   }
-  main .main__wrapper .main__item .mobile__img {
-    display: block;
-    margin: 100rem 0;
-  }
   main .main__wrapper .main__item .device__img {
-    display: none;
+    margin: 0 50rem;
   }
   main .main__wrapper .main__item .main_h1_1 {
     width: 100%;

@@ -38,12 +38,15 @@ h1, h2, h3, h4, h5, h6 {
   src: url("../fonts/Jovanny Lemonad - Bender-Black.otf");
 }
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   padding: 0 16%;
   display: flex;
   justify-content: space-between;
   height: 85px;
   align-items: center;
-  position: relative;
   color: white;
   background-color: #2D4275;
 }
@@ -140,6 +143,32 @@ nav ul a:hover {
 }
 nav .fas {
   color: white;
+}
+nav .logo__blue {
+  display: none;
+}
+
+.sticky {
+  background-color: white;
+  color: #2D4275;
+}
+.sticky a {
+  color: #2D4275;
+}
+.sticky a:visited {
+  color: #2D4275;
+}
+.sticky a:hover {
+  color: #82D8D8;
+}
+.sticky i {
+  color: #2D4275;
+}
+.sticky .logo__white {
+  display: none;
+}
+.sticky .logo__blue {
+  display: block;
 }
 
 header {
