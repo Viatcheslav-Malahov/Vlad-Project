@@ -570,6 +570,9 @@ footer {
     padding: 30rem 0 0 0;
   }
 }
+footer a:visited {
+  color: white;
+}
 footer li {
   cursor: pointer;
 }

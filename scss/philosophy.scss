@@ -575,7 +575,6 @@ main{
    
 }
 
-
 footer {
     padding: 131rem 0 0 0;
     @media screen and (max-width:960px){
@@ -588,6 +587,9 @@ footer {
     font-size: 18rem;
     line-height: 32rem;
     color: rgba(255, 255, 255, 1);
+    a:visited{
+        color: rgba(255, 255, 255, 1);
+    }
     li {
         cursor: pointer;
     }
