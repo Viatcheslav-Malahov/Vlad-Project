@@ -7,7 +7,7 @@
     list-style: none;
 }
 html {
-    font-size: 0.8px;
+    font-size: 0.9px;
 }
 h1,h2,h3,h4,h5,h6 {
     font-size: 1em;
@@ -15,26 +15,24 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 1400px) {
     html {
-        font-size: 0.8px;
+        font-size: 0.9px;
     }
 }
 @media screen and (max-width: 1200px) {
     html {
-        font-size: 0.6px;
+        font-size: 0.7px;
     }
 }
+
 @font-face {
     font-family: Bender;
-    src: url('../fonts/Jovanny\ Lemonad\ -\ Bender.otf');
+    src: url('../fonts/Bender.ttf');
 }
 @font-face {
     font-family: Bender-bold;
-    src: url('../fonts/Jovanny\ Lemonad\ -\ Bender-Bold.otf');
+    src: url('../fonts/Bender-Bold.ttf');
 }
-@font-face {
-    font-family: Bender-black;
-    src: url('../fonts/Jovanny\ Lemonad\ -\ Bender-Black.otf');
-}
+
 
 
 nav {
@@ -93,11 +91,11 @@ nav {
         flex-direction: column;
         align-items: center;
         z-index: 100000;
-        top: 70px;
+        top: 60px;
         left: 0;
         width: 100%;
         background-color: #82D8D8; 
-        height: 100%; 
+        height: calc( 100% - 60px); 
         @media screen and (min-width: 960px) {
             display: none;
         }
@@ -126,7 +124,6 @@ nav {
             font-family: Bender;
             font-weight: 700;
             font-size: 20rem;
-            line-height: 24rem;
             font-style: normal;
             cursor: pointer;
         }
@@ -144,6 +141,17 @@ nav {
         a:hover {
             color: #82D8D8;        
         }
+        .version{
+            font-size: 25rem;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+
     }
     .fas {
         //color: rgba(45, 66, 117, 1);
@@ -221,24 +229,11 @@ header {
         padding-right: 30%;
         padding-bottom: 100rem;
         width: 100%;
-        @media screen and (max-width: 1200px) {
-            
-        }
+
         @media screen and (max-width: 960px) {
             width: 100%;
-            padding: 60rem 7% 100rem 7%;
+            padding: 90px 7% 100rem 7%;
             text-align: center;
-        }
-        @media screen and (max-width: 300px) {
-            flex-grow: 1;
-        }
-        @media screen and (max-height: 800px){
-            padding: 50rem 5%  ;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            height: 100%;
-            align-items: center;
         }
 
         display: flex;
@@ -252,9 +247,7 @@ header {
             font-size: 54rem;
             line-height: 72rem;
             color: #82D8D8;        
-            @media screen and (max-width: 960px) {
-                color: #82D8D8;        
-            }
+            
             @media screen and (max-width: 960px) {
                 margin-top: 10rem;
             }
@@ -274,115 +267,7 @@ header {
             line-height: 40rem;
         }
     }
-    .header__inp {
-        padding-top: 37px;
-        display: flex;
-        align-items: center;
-        
-        @media screen and (max-width: 500px) {
-            padding-top: 10px;
-        }
-        .header__inp_Box{
-            display: inline-block;
-            display: none;
-            align-self: center;
-            position: relative;
-            width: 395rem;
-            height: 67rem;
-            box-sizing: border-box;
-            background: #D3EDED;
-            clip-path: polygon(2% 0%, 98% 0%, 100% 10%, 100% 90%, 98% 100%, 2% 100%, 0% 90%, 0% 10%);        
-            @media screen and (max-width: 960px) {
-                display: none;
-            }
-
-        }
-        input {
-            outline: none;
-            border: none;
-            top: 1rem;
-            left: 1rem;
-            position: absolute;
-            width: 392rem;
-            padding-left: 16rem;
-            height: 64rem;
-            font-family: Bender;
-            font-weight: 400;
-            font-weight: normal;
-            font-size: 24rem;
-            line-height: 40rem;
-            clip-path: polygon(2% 0%, 98% 0%, 100% 10%, 100% 90%, 98% 100%, 2% 100%, 0% 90%, 0% 10%);        
-            @media screen and (max-width: 960px) {
-                display: none;
-            }
-            @media screen and (max-width: 400px) {
-                width: 70%;
-            }
-        }
-        
-        button { 
-            z-index: 1
-            ;
-            position: relative;
-            width: 216rem;
-            height: 64rem;
-            font-size: 20rem;
-            line-height: 34rem;
-            font-family: Bender-bold;
-            border: none;
-            background-color: #82D8D8;
-            z-index: 100;
-            clip-path: polygon(2% 0%, 98% 0%, 100% 10%, 100% 90%, 98% 100%, 2% 100%, 0% 90%, 0% 10%);
-            cursor: pointer;
-            a{
-                text-decoration: none;
-            }
-            a:visited{
-                color: black;
-            }
-            @media screen and (max-width: 280px) {
-                margin-bottom: 30rem;
-            }
-
-        }
-        button::after{
-            content: "";
-            position: absolute;
-            z-index: -100;
-            top: -8rem;
-            left: 0;
-            width: 216rem;
-            height: 62rem;
-            background-color: #82D8D8;
-            clip-path: polygon(2% 0%, 98% 0%, 100% 10%, 100% 90%, 98% 100%, 2% 100%, 0% 90%, 0% 10%);
-            cursor: pointer;
-        }
-        button:hover {
-            opacity: 0.8;
-        }
-        @media screen and (max-width: 960px) {
-            display: block;
-            button {
-                margin-top: 20rem;
-            }
-        }
-    }
-    .header__left {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        @media screen and (max-width: 960px) {
-            margin: 0 auto;
-            display: none;
-        }            
-        img {  
-            margin-top: 60rem;         
-            width: 100%;
-        }
-    }
-   
+ 
 }
 
 main{
@@ -799,4 +684,8 @@ footer {
             margin: 0;
         }
     }
+}
+
+.passive_sec{
+    display: none;
 }

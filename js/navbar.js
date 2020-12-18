@@ -6,11 +6,19 @@ NavBar.addEventListener('click',()=>{
         NavBarItem.classList.add('fa-times')
         NavBarItem.classList.remove('fa-bars')
         document.querySelector('.nav_links_bar').classList.remove('hidden')
+        document.querySelector('header').classList.add('passive_sec')
+        document.querySelector('main').classList.add('passive_sec')
+        document.querySelector('footer').classList.add('passive_sec')
+        document.querySelector('section').classList.add('passive_sec')
     }
     else {
         NavBarItem.classList.add('fa-bars')
         NavBarItem.classList.remove('fa-times')
         document.querySelector('.nav_links_bar').classList.add('hidden')
+        document.querySelector('header').classList.remove('passive_sec')
+        document.querySelector('main').classList.remove('passive_sec')
+        document.querySelector('footer').classList.remove('passive_sec')
+        document.querySelector('section').classList.remove('passive_sec')
     }
 })
 

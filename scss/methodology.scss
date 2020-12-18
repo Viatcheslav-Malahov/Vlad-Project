@@ -7,7 +7,7 @@
     list-style: none;
 }
 html {
-    font-size: 0.8px;
+    font-size: 0.9px;
 }
 h1,h2,h3,h4,h5,h6 {
     font-size: 1em;
@@ -15,25 +15,21 @@ h1,h2,h3,h4,h5,h6 {
 
 @media screen and (max-width: 1400px) {
     html {
-        font-size: 0.8px;
+        font-size: 0.9px;
     }
 }
 @media screen and (max-width: 1200px) {
     html {
-        font-size: 0.6px;
+        font-size: 0.7px;
     }
 }
 @font-face {
     font-family: Bender;
-    src: url('../fonts/Jovanny\ Lemonad\ -\ Bender.otf');
+    src: url('../fonts/Bender.ttf');
 }
 @font-face {
     font-family: Bender-bold;
-    src: url('../fonts/Jovanny\ Lemonad\ -\ Bender-Bold.otf');
-}
-@font-face {
-    font-family: Bender-black;
-    src: url('../fonts/Jovanny\ Lemonad\ -\ Bender-Black.otf');
+    src: url('../fonts/Bender-Bold.ttf');
 }
 
 
@@ -50,7 +46,6 @@ nav {
     color: white;
     background-color: #2D4275;
     @media screen and (max-width: 960px) {
-        //clip-path: polygon(80rem 0%, calc(100% - 80rem) 0%, 100% 80rem, 100% calc(100% - 80rem), 100% 100%, 0 100%, 0% calc(100% - 80rem), 0% 80rem);
         height: 65px;
         padding: 0 8%;
         .nav__logo {
@@ -60,7 +55,6 @@ nav {
             }
         }
     }
-    //clip-path: polygon(80rem 0%, calc(100% - 80rem) 0%, 100% 0, 100% calc(100% - 80rem), calc(100% - 80rem) 100%, 80rem 100%, 0% calc(100% - 80rem), 0 0);    display: flex;   
     a:visited {
         color: white;
     }
@@ -93,11 +87,11 @@ nav {
         flex-direction: column;
         align-items: center;
         z-index: 100000;
-        top: 70px;
+        top: 60px;
         left: 0;
         width: 100%;
         background-color: #82D8D8; 
-        height: 100%; 
+        height: calc( 100% - 60px); 
         @media screen and (min-width: 960px) {
             display: none;
         }
@@ -126,7 +120,6 @@ nav {
             font-family: Bender;
             font-weight: 700;
             font-size: 20rem;
-            line-height: 24rem;
             font-style: normal;
             cursor: pointer;
         }
@@ -141,6 +134,17 @@ nav {
             border-bottom: 2px solid #82D8D8;
             margin-bottom: -2px;        
         }
+        .version{
+            font-size: 25rem;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+
         a:hover {
             color: #82D8D8;        
         }
@@ -201,30 +205,21 @@ header {
         padding-bottom: 0rem;
         display: flex;
         flex-direction: column;
+        height: calc(100vh + 10px);
+
     }
     .header__right{
         padding-left: 16%;
         padding-right: 40%;
         width: 100%;
-
+        
         
         @media screen and (max-width: 960px) {
             width: 100%;
-            padding: 60rem 7% 160rem 7%;
+            padding: 90px 7% 0 7%;
             text-align: center;
         }
-        @media screen and (max-width: 300px) {
-            flex-grow: 1;
-        }
-        @media screen and (max-height: 800px){
-            padding: 0 5% ;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            height: 100%;
-            align-items: center;
-        }
-
+   
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -339,7 +334,7 @@ footer {
     clip-path: polygon(40rem 0%, calc(100% - 40rem) 0%, 100% 40rem, 100% 100%, 70% 100%, 30% 100%, 0% 100%, 0 40rem);    
     font-family: Bender;
     font-weight: 400;
-    font-size: 18rem;
+    font-size: 19rem;
     line-height: 32rem;
     color: rgba(255, 255, 255, 1);
     a:visited{
@@ -347,10 +342,10 @@ footer {
     }
     a{
         color: rgba(255, 255, 255, 1);
+        
     }
     a:hover{
-        color: #82D8D8;        
-        ;
+        color: #82D8D8;               
     }
     li {
         cursor: pointer;
@@ -388,13 +383,13 @@ footer {
         p {
             margin-bottom: 18rem;
             font-family: Bender;
-            font-size: 18rem;
+            font-size: 19rem;
             font-weight: 700;
         }
     }
     .footer__item{
         font-family: Bender;
-        font-size: 18rem;
+        font-size: 19rem;
         h2 {
             text-transform: uppercase;
             font-family: Bender;
@@ -406,7 +401,7 @@ footer {
     }
     .footer__item2 {
         font-weight: 400;
-        font-size: 18rem;
+        font-size: 19rem;
         line-height: 32rem;
         h2 {
             margin-bottom: 30rem;
@@ -521,4 +516,8 @@ footer {
             margin: 0;
         }
     }
+}
+
+.passive_sec{
+    display: none;
 }
