@@ -4,36 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O2+</title>
+    <title>More Oxygen, Less Carbon | OXG Network</title>
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
 
-    <nav>
-        <div class="nav__logo">
-            <a class = "logo__white" href="./index.html"><img src="./images/Logo__White.svg" alt="" style="color: white;"></a>
-            <a class = "logo__blue"  href="./index.html"><img src="./images/logo.svg" alt="" style="color: white;"></a>
-        </div>
-        <ul class="nav_links">
-            <li><a href="./philosophy.html">PHILOSOPHY</a></li>
-            <li><a href="./methotodogy.html">METHODOLOGY</a></li>
-            <li><a href="./contact.html">CONTACT</a></li>
-        </ul>
-        <div class="nav__bar">
-            <i class='fas fa-bars'></i>
-        </div>
-
-        <ul class="nav_links_bar hidden">
-            <li><a href="./philosophy.html">PHILOSOPHY</a></li>
-            <li><a href="./methotodogy.html">METHODOLOGY</a></li>
-            <li><a href="./contact.html">CONTACT</a></li>
-            <li class="version">1 . 0</li>
-        </ul>
-    </nav>
+    <div class="navContainer"></div>
+    <script src="./js/appendNav.js"></script>
 
     <section class="bg__blue">
 
@@ -104,7 +87,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckActivities" type="checkbox" id="processorCheckbox" name="processor">
+                            <input class="mainFormCheckActivities" type="checkbox" id="processorCheckbox"
+                                name="processor">
                             <label for="processorCheckbox"></label>
                         </div>
                         <p>Processor</p>
@@ -112,7 +96,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckActivities" type="checkbox" id="producerCheckbox" name="producer">
+                            <input class="mainFormCheckActivities" type="checkbox" id="producerCheckbox"
+                                name="producer">
                             <label for="producerCheckbox"></label>
                         </div>
                         <p>Producer/ Manufacturer</p>
@@ -120,7 +105,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckActivities" type="checkbox" id="scientistCheckbox" name="scientist">
+                            <input class="mainFormCheckActivities" type="checkbox" id="scientistCheckbox"
+                                name="scientist">
                             <label for="scientistCheckbox"></label>
                         </div>
                         <p>Scientist</p>
@@ -128,7 +114,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckActivities" type="checkbox" id="regulatorCheckbox" name="regulator">
+                            <input class="mainFormCheckActivities" type="checkbox" id="regulatorCheckbox"
+                                name="regulator">
                             <label for="regulatorCheckbox"></label>
                         </div>
                         <p>Regulator</p>
@@ -137,7 +124,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckActivities" type="checkbox" id="policyMakerCheckbox" name="policyMaker">
+                            <input class="mainFormCheckActivities" type="checkbox" id="policyMakerCheckbox"
+                                name="policyMaker">
                             <label for="policyMakerCheckbox"></label>
                         </div>
                         <p>Policy Maker</p>
@@ -146,7 +134,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckActivities" type="checkbox" id="transportProviderCheckbox" name="transportProvider">
+                            <input class="mainFormCheckActivities" type="checkbox" id="transportProviderCheckbox"
+                                name="transportProvider">
                             <label for="transportProviderCheckbox"></label>
                         </div>
                         <p>Transport Provider</p>
@@ -155,7 +144,8 @@
                     <div class="checkbox__wrapper_item">
                         <div>
                             <div class="checkbox__wrapper_item_box">
-                                <input class="mainFormCheckActivities" type="checkbox" id="individualCheckbox" name="individual"> 
+                                <input class="mainFormCheckActivities" type="checkbox" id="individualCheckbox"
+                                    name="individual">
                                 <label for="individualCheckbox"></label>
                             </div>
 
@@ -166,7 +156,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckActivities" type="checkbox" id="consortiumCheckbox" name="consortium">
+                            <input class="mainFormCheckActivities" type="checkbox" id="consortiumCheckbox"
+                                name="consortium">
                             <label for="consortiumCheckbox"></label>
                         </div>
                         <p>Consortium</p>
@@ -174,7 +165,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckActivities" type="checkbox" id="investorCheckbox" name="investor">
+                            <input class="mainFormCheckActivities" type="checkbox" id="investorCheckbox"
+                                name="investor">
                             <label for="investorCheckbox"></label>
                         </div>
 
@@ -429,13 +421,15 @@
                 <div class="checkbox__wrapper checkbox__wrapper_2">
 
 
-                    <p class="activities_label">I would like to become an O2+ member because</p>
+                    <p class="activities_label">I would like to become an OXG Network member because
+                    </p>
                     <p class="checkbox__line"></p>
                     <p class="activities_notice">(Select as many as appropriate)</p>
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckMember" type="checkbox" id="learnOffsetting" name="learnOffsetting">
+                            <input class="mainFormCheckMember" type="checkbox" id="learnOffsetting"
+                                name="learnOffsetting">
                             <label for="learnOffsetting"></label>
                         </div>
 
@@ -444,7 +438,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckMember" type="checkbox" id="rewardOffsetting" name="rewardOffsetting">
+                            <input class="mainFormCheckMember" type="checkbox" id="rewardOffsetting"
+                                name="rewardOffsetting">
                             <label for="rewardOffsetting"></label>
                         </div>
 
@@ -455,7 +450,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckMember" type="checkbox" id="connectStakeholder" name="connectStakeholder">
+                            <input class="mainFormCheckMember" type="checkbox" id="connectStakeholder"
+                                name="connectStakeholder">
                             <label for="connectStakeholder"></label>
                         </div>
                         <p> I want to connect with other stakeholders
@@ -473,7 +469,8 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheckMember" type="checkbox" id="O2_methotodogy" name="O2_methotodogy">
+                            <input class="mainFormCheckMember" type="checkbox" id="O2_methotodogy"
+                                name="O2_methotodogy">
                             <label for="O2_methotodogy"></label>
                         </div>
                         <p> I want to know more about O2+ methodology
@@ -494,8 +491,17 @@
                             <input class="mainFormCheckMember" type="checkbox" id="negativeExp" name="negativeExp">
                             <label for="negativeExp"></label>
                         </div>
-                        <p> I had negative experience with current 
+                        <p> I had negative experience with current
                             methods/programmes for offsetting CO2</p>
+                    </div>
+
+                    <div class="checkbox__wrapper_item">
+                        <div class="checkbox__wrapper_item_box">
+                            <input class="mainFormCheck" type="checkbox" id="promotionCheck" name="promotionCheck">
+                            <label for="promotionCheck"></label>
+                        </div>
+                        <p>I would like to request some promotional materials eg. one pager, pitch deck or white paper
+                        </p>
                     </div>
 
                     <div class="checkbox__wrapper_item">
@@ -506,10 +512,11 @@
                         <p> I have another reason (s)
                         </p>
                     </div>
-                  
+
+
+
                     <div class="inpup__wrapper">
-                        <textarea class="mainFormTextArea" name="AnotherReasonText" 
-                        id="AnotherReasonText"></textarea>
+                        <textarea class="mainFormTextArea" name="AnotherReasonText" id="AnotherReasonText"></textarea>
                     </div>
 
 
@@ -529,15 +536,18 @@
 
                     <div class="checkbox__wrapper_item">
                         <div class="checkbox__wrapper_item_box">
-                            <input class="mainFormCheck" type="checkbox" id="notificationCheck" name="notificationCheck">
+                            <input class="mainFormCheck" type="checkbox" id="notificationCheck"
+                                name="notificationCheck">
                             <label for="notificationCheck"></label>
                         </div>
                         <p>Keep me notified about last updates</p>
                     </div>
-               
+
+
+
                     <p class="checkbox__line checkbox__line_2"></p>
 
-                    
+
                 </div>
 
                 <div class="main__section_buttonBox">
@@ -560,66 +570,9 @@
 
     </section>
 
+    <div class="footerContainer"></div>
+    <script src="./js/appendFooter.js"></script>
 
-    <footer>
-        <section class="footer__up">
-
-            <div class="footer__item1">
-                <img src="./images/logo__footer.svg" alt="">
-                <p>Designed by 🌍</p>
-                <p>Made with 💚</p>
-            </div>
-
-            <div class="footer__item2 footer__item2_1 footer__item">
-                <h2>Company</h2>
-                <ul>
-                    <li><a href="./philosophy.html">About Us</a></li>
-                    <li>Blog</li>
-                    <li>Careers</li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__item2 footer__item2_2 footer__item ">
-                <h2>Members</h2>
-                <ul>
-                    <li class="selected">
-                        <a href="./calendly.html" 
-                        target="_blank">Schedule a call</a>
-                    </li>
-                    <li>One Pager</li>
-                    <li>Pitch Deck</li>
-                    <li>White Paper</li>
-                </ul>
-            </div>
-
-            <div class="footer__item3 footer__item">
-                <h2>Join the community</h2>
-                <ul>
-                    <li class='li__socials'>
-                        <ul class="footer__socials">
-                            <li><img src="./images/youtube.svg" alt=""></li>
-                            <li><img src="./images/linkedin.svg" alt=""></li>
-                            <li><img src="./images/twitter.svg" alt=""></li>
-                            <li><img src="./images/facebook.svg" alt=""></li>
-                            <li><img src="./images/instagram.svg" alt=""></li>
-                            <li><img src="./images/reddit.svg" alt=""></li>
-                            <li><img src="./images/telegram.svg" alt=""></li>                      
-                        </ul>
-                    </li>
-                    <ul class="li__grid">
-                        <li>Terms of Use</li>
-                        <li>Privacy Policy</li>
-                        <li>Cookies Policy</li>
-                    </ul>
-                </ul>
-            </div>
-        </section>
-        <section class="footer__borderline"></section>
-        <section class="footer__down">
-            <p>Copyright © O2PLUS DAO LTD 2020</p>
-        </section>
-    </footer>
 
     <script src="./js/navbar.js"></script>
     <script src="./js/formSend.js"></script>

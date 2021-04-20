@@ -1,0 +1,19 @@
+//Переменные
+//Шрифт
+$Orbitron : 'Orbitron', sans-serif;
+
+//Cброс базовых стилей
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    font-size: 1px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 1em;
+}

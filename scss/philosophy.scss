@@ -1,17 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    list-style: none;
-}
-html {
-    font-size: 0.9px;
-}
-h1,h2,h3,h4,h5,h6 {
-    font-size: 1em;
-}
+@import 'main.scss';
+@import 'footer.scss';
+@import 'nav.scss';
 
 @media screen and (max-width: 1400px) {
     html {
@@ -23,169 +12,6 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 0.7px;
     }
 }
-
-@font-face {
-    font-family: Bender;
-    src: url('../fonts/Bender.ttf');
-}
-@font-face {
-    font-family: Bender-bold;
-    src: url('../fonts/Bender-Bold.ttf');
-}
-
-
-
-nav {
-    z-index: 10;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 0 16%;
-    display: flex;
-    justify-content: space-between;
-    height: 85px;
-    align-items: center;
-    color: white;
-    background-color: #2D4275;
-    @media screen and (max-width: 960px) {
-        //clip-path: polygon(80rem 0%, calc(100% - 80rem) 0%, 100% 80rem, 100% calc(100% - 80rem), 100% 100%, 0 100%, 0% calc(100% - 80rem), 0% 80rem);
-        height: 65px;
-        padding: 0 8%;
-        .nav__logo {
-            height: 28px;
-            img{
-                height: 100%;
-            }
-        }
-    }
-    //clip-path: polygon(80rem 0%, calc(100% - 80rem) 0%, 100% 0, 100% calc(100% - 80rem), calc(100% - 80rem) 100%, 80rem 100%, 0% calc(100% - 80rem), 0 0);    display: flex;   
-    a:visited {
-        color: white;
-    }
-    a{
-        color: white;
-    }
-    .nav__bar{
-        display: none;
-    }
-   
-    @media screen and (max-width: 960px) {
-        .nav_links{
-            li{
-                display: none;
-            }
-        }
-        .nav__bar{
-            display: block;
-            i{
-                display: block;
-                font-size: 50rem;
-                cursor: pointer;
-            }
-        }
-    }
-    
-    .nav_links_bar {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 100000;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #82D8D8; 
-        height: calc( 100% - 60px); 
-        @media screen and (min-width: 960px) {
-            display: none;
-        }
-        li{
-            padding-top: 40rem;
-            display: block;
-            text-align: center;
-            width: 100%;
-            font-size: 40rem;
-            padding: 40rem;
-            margin-top: 40rem;
-        }
-        li:hover{
-            color: #2D4275;
-        }
-    }
-    .hidden {
-        display: none;
-        transition: all 0.3s ease-out;
-    }
-    ul{
-        display: flex;
-
-        li{
-            margin: 0 25rem ;
-            font-family: Bender;
-            font-weight: 700;
-            font-size: 20rem;
-            font-style: normal;
-            cursor: pointer;
-        }
-          
-        .nav__links_selected{
-            color: rgba(2, 169, 123, 1);
-            border-bottom: 2px solid rgba(2, 169, 123, 1);          
-        }
-
-        li:hover {
-            color: #82D8D8;        
-            border-bottom: 2px solid #82D8D8;
-            margin-bottom: -2px;        
-        }
-        a:hover {
-            color: #82D8D8;        
-        }
-        .version{
-            font-size: 25rem;
-            padding: 0;
-            margin: 0;
-            flex-grow: 1;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            padding-bottom: 10px;
-        }
-
-    }
-    .fas {
-        //color: rgba(45, 66, 117, 1);
-        color:white;
-    }
-
-    .logo__blue {
-        display: none;
-    }
-}
-
-.sticky {
-    background-color: white;
-    color: #2D4275 ;
-    a{
-        color: #2D4275 ;
-    }
-    a:visited {
-        color: #2D4275 ;
-    }
-    a:hover{
-        color: #82D8D8;        
-    }
-    i{
-        color: #2D4275 ;
-    }
-    .logo__white{
-        display: none;
-    }
-    .logo__blue {
-        display: block;
-    }
-}
-
 
 header {
     margin-top: -10px;
@@ -242,7 +68,7 @@ header {
 
         h1 {
             margin-top: 124rem;
-            font-family: Bender-bold;
+            font-family: $Orbitron;
             font-weight: bold;
             font-size: 54rem;
             line-height: 72rem;
@@ -254,14 +80,14 @@ header {
         }
         h2 {
             padding-top: 28rem;
-            font-family: Bender-bold;
+            font-family: $Orbitron;
             font-weight: bold;
             font-size: 32rem;
             line-height: 48rem;
         }
         h3 {
             padding-top: 23rem;
-            font-family: Bender;
+            font-family: $Orbitron;
             font-weight: 400;
             font-size: 24rem;
             line-height: 40rem;
@@ -274,7 +100,7 @@ main{
 
     .description{
         padding: 216rem 295rem;
-        font-family: Bender-bold;
+        font-family: $Orbitron;
         h1{
             font-size: 44rem;
             color: rgba(2, 169, 123, 1);
@@ -331,20 +157,20 @@ main{
 
         h1{ 
             padding-top: 176rem;
-            font-family: Bender-bold;
+            font-family: $Orbitron;
             font-size: 54rem;
             text-align: center;
             color: rgba(45, 66, 117, 1);
         }
 
         h2{
-            font-family: Bender-bold;
+            font-family: $Orbitron;
             font-size: 24rem;
             color: rgba(31, 45, 80, 1);
         }
 
         h3{
-            font-family: Bender;
+            font-family: $Orbitron;
             font-size: 18rem;
             color: rgba(2, 169, 123, 1);
         }
@@ -409,20 +235,20 @@ main{
 
         h1{ 
             padding-top: 176rem;
-            font-family: Bender-bold;
+            font-family: $Orbitron;
             font-size: 54rem;
             text-align: center;
             color: rgba(45, 66, 117, 1);
         }
 
         h2{
-            font-family: Bender-bold;
+            font-family: $Orbitron;
             font-size: 24rem;
             color: rgba(31, 45, 80, 1);
         }
 
         h3{
-            font-family: Bender;
+            font-family: $Orbitron;
             font-size: 18rem;
             color: rgba(2, 169, 123, 1);
         }
@@ -500,7 +326,7 @@ footer {
     }
     background-color: #2D4275;
     clip-path: polygon(40rem 0%, calc(100% - 40rem) 0%, 100% 40rem, 100% 100%, 70% 100%, 30% 100%, 0% 100%, 0 40rem);    
-    font-family: Bender;
+    font-family: $Orbitron;
     font-weight: 400;
     font-size: 18rem;
     line-height: 32rem;
@@ -550,17 +376,17 @@ footer {
         }
         p {
             margin-bottom: 18rem;
-            font-family: Bender;
+            font-family: $Orbitron;
             font-size: 18rem;
             font-weight: 700;
         }
     }
     .footer__item{
-        font-family: Bender;
+        font-family: $Orbitron;
         font-size: 18rem;
         h2 {
             text-transform: uppercase;
-            font-family: Bender;
+            font-family: $Orbitron;
             font-style: normal;
             font-weight: bold;
             font-size: 24rem;
